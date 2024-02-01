@@ -64,11 +64,11 @@ export const NavLink = styled.a`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     :hover {
-      color: ${({ theme }) => theme.primary};
+      color: hsla(213, 84%, 58%, 0.884);
     }
 
     &.active {
-      border-bottom: 2px solid ${({ theme }) => theme.primary};
+      border-bottom: 2px solid hsla(213, 84%, 58%, 0.884);
     }
 `;
 

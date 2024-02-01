@@ -96,8 +96,8 @@ export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 360px;
-  max-height: 360px;
+  max-width: 320px;
+  max-height: 340px;
   border-radius: 2%;
   @media (max-width: 768px) {
     max-width: 400px;

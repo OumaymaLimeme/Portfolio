@@ -16,7 +16,7 @@ const Button = styled.button`
     transition: all 0.8s ease-in-out;
 `
 const Card = styled.div`
-    width: 330px;
+    width: 340px;
     height: 490px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
@@ -58,7 +58,7 @@ const Tags = styled.div`
 const Tag = styled.span`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primary};
+    color: hsla(213, 84%, 58%, 0.884);
     background-color: ${({ theme }) => theme.primary + 15};
     padding: 2px 8px;
     border-radius: 10px;
