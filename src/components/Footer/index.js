@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+
 import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
@@ -84,11 +85,25 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
+const Num = styled.a`
+color: ${({ theme }) => theme.text_primary};
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: hsla(213, 84%, 58%, 0.884);
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
 function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
         <Logo>Oumeima Limeme</Logo>
+        <Num> (+216) 54886508</Num>
         <Nav>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
@@ -100,8 +115,13 @@ function Footer() {
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.leetcode} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
+          <SocialMediaIcon>
+              <a href={`mailto:${Bio.email}`} rel="noopener noreferrer" style={{ color: 'white' }}>
+              <AlternateEmailIcon />
+              </a>
+</SocialMediaIcon>
+
         </SocialMediaIcons>
         <Copyright>
           &copy; 2024 Oumeima Limeme. All rights reserved.
