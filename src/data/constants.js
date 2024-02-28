@@ -278,8 +278,8 @@ export const projects = [
       "Our Project Goal is to create an application that helps run a medical office smoothly. People should be able to book appointments online and manage patient information easily. The idea is to make it user-friendly and upgrade the way medical practices handle their tasks to enhance the overall workflow.",
       image : require("../images/projects/pp1.png"),
       images: 
-    ["https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",    
-    "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png"],
+    [{ imgPath : "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png"},    
+     {imgPath :"https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png" }],
     tags: [ 
       "Angular",
       "Node Js",
@@ -454,7 +454,7 @@ export const acheivements = [
     title: "Code Her Ways 1.0 ",
     date: "April 29, 2023",
     description:
-      " I am honored to have clinched the 4th place in Code Her Ways 1.0, a Problem Solving competition for girls, demonstrating my proficiency and commitment to coding excellence.",
+      " I am honored to have clinched the 3rd place in Code Her Ways 1.0, a Problem Solving competition for girls, demonstrating my proficiency and commitment to coding excellence.",
     image:require("../images/achiv/1.jpg"),
     tags: ["C++", "Problem Solving","Team work", "Time managment"],
   },
