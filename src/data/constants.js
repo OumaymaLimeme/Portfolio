@@ -7,7 +7,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/OumaymaLimeme",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
+    require("../images/Oumeima_limeme_CV.pdf"),
   linkedin: "https://www.linkedin.com/in/oumaymalimeme/",
   leetcode: "https://leetcode.com/Oumayma23/",
   facebook: "https://www.facebook.com/oumayma2000limeme",
@@ -180,31 +180,30 @@ export const experiences = [
     desc: "• In my final year project, I focused on creating an efficient and user-friendly system for managing credit requests. This includes setting up a portal, automating processes using Salescloud, integrating document management functionalities, and incorporating artificial intelligence for investment suggestions.",
     skills: [
       "Lightning Web Component(html,css,js)",
-      "Oracle APEX",
+      "APEX",
       "Einstein Analytics",
       "Community Cloud",
-      "ELT",
-      "Process Builder",
-      "Batch",
+      "Flow Builder",
+      "Process Builder"
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+ //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    role: "Fullstack Externship",
-    company: "Flipr",
+    img: require("../images/achiv/sakouhi.png"),
+    role: "Software Engineer Intern",
+    company: "Sakouhi co",
     date: "June 2023 - July 2023",
-    desc: "• Designed and developed HR platform to optimize ADDINN’s human capital performance and easily managed selected profiles by Automating the process that increased the efficiency of recruitment. ",
+    desc: "•Designed MongoDB database schemas and developed RESTful APIs for an educational platform, effectively handling over 1,000 course enrollments. Additionally, integrated the Stripe API to improve payment processing, boosting transaction success rates by 20%. ",
     skills: [
-      "Angular",
-      ".NET Core",
-      "CQRS",
-      "Clean Architecture",
-      "XUnit test",
-      "GitLab",
+      "Next.js",
+      "Tailwind CSS",
+      "MongoDB",
+      "Prisma",
+      "Stripe API",
+      "Kanban",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
+  //  doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
   },
   {
     id: 2,
@@ -409,7 +408,7 @@ export const projects = [
     github: "https://github.com/rishavchanda/Todo-Web-App",
     webapp: "https://rishav-react-todo.netlify.app/",
   },
-  {
+/*  {
     id: 5,
     title: "Breaking Bad",
     date: "Jun 2021",
@@ -434,7 +433,7 @@ export const projects = [
     category: "android app",
     github: "https://github.com/rishavchanda/Quiz-Earn",
     webapp: "https://github.com/rishavchanda/Quiz-Earn",
-  },
+  },*/
   {
     id: 7,
     title: "Face Recognition",
