@@ -335,7 +335,7 @@ export const projects = [
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "web app",
     github: "https://github.com/OumaymaLimeme/Forum_website",
-    webapp: "https://podstream.netlify.app/",
+    webapp: "https://github.com/OumaymaLimeme/Forum_website",
     member: [
       {
         name: "Oumayma Aoun",
@@ -355,7 +355,7 @@ export const projects = [
     tags: ["Python", "TensorFlow", "Pytesseract", "Scikit-learn", "Gensim","LDA model"],
     category: "machine learning",
     github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
+    webapp: "https://github.com/rishavchanda/Brain-Tumor-Detection",
     member: [
       {
         name: "Manar Fareh",
@@ -375,7 +375,7 @@ export const projects = [
     tags: ["Java", "JavaFX", "MVC", "MySQL"],
     category: "android app",
     github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+    webapp: "https://github.com/rishavchanda/Buckoid-Android-App",
     member: [
       {
         name: "Khalil Mejri",
@@ -389,12 +389,12 @@ export const projects = [
     title: "Pixemantic's Website",
     date: "Jul 2021",
     description:
-      "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
+      "During my internship at Pixemantic as a first-year student at Enicarthage, I was tasked with working on the frontend of their official website. Here, I applied the knowledge and skills I acquired during my training to develop a well-constructed web application using Angular.",
     image: require("../images/projects/p4.png"),
     tags: ["Angular", "Tailwind", "JavaScript", "Git"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Js",
-    webapp: "https://whatsapp-clone-rishav.web.app",
+    github: "https://github.com/OumaymaLimeme/Pixemantic-Intership/tree/main",
+    webapp: "https://github.com/OumaymaLimeme/Pixemantic-Intership/tree/main",
   },
   {
     id: 4,
@@ -405,8 +405,8 @@ export const projects = [
     image:  require("../images/projects/acceuil.png"),
       tags: ["Angular", ".NET Core", "CQRS", "JWT", "Clean Architecture", "XUnit test", "GitLab", "Scrum" ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Todo-Web-App",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    github: "https://github.com/OumaymaLimeme/ADDINN-Tunisie-Internship-/tree/main?tab=readme-ov-file",
+    webapp: "https://github.com/OumaymaLimeme/ADDINN-Tunisie-Internship-/tree/main?tab=readme-ov-file",
   },
 /*  {
     id: 5,
@@ -444,7 +444,7 @@ export const projects = [
     tags: ["Python", "Keras", "TensorFlow", "MobileNet", "CNN", "OpenCV"],
     category: "machine learning",
     github: "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
-    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    webapp: "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
   },
 ];
 export const acheivements = [
