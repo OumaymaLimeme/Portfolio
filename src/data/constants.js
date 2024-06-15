@@ -188,7 +188,7 @@ export const experiences = [
     ],
  //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
-  {
+ /* {
     id: 1,
     img: require("../images/achiv/sakouhi.png"),
     role: "Software Engineer Intern",
@@ -204,7 +204,7 @@ export const experiences = [
       "Kanban",
     ],
   //  doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
-  },
+  },*/
   {
     id: 2,
     img: require("../images/achiv/addinn_logo.jpg"),
