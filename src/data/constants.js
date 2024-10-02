@@ -4,14 +4,14 @@ export const Bio = {
     "Full Stack Developer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I’m a dedicated and versatile software engineer with a passion for creating web and mobile applications. I thrive on new challenges and focus on delivering efficient, high-quality solutions. With a growth mindset and commitment to innovation, I’m ready to contribute meaningfully to impactful projects.",
   github: "https://github.com/OumaymaLimeme",
   resume:
     require("../images/Oumeima_limeme_CV.pdf"),
   linkedin: "https://www.linkedin.com/in/oumaymalimeme/",
   leetcode: "https://leetcode.com/Oumayma23/",
   facebook: "https://www.facebook.com/oumayma2000limeme",
-  email:"oumeima.limeme@enicar.ucar.tn"
+  email:"oumeimalimeme@gmail.com"
 
 };
 
@@ -60,6 +60,12 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
+        name: "React Native",
+        image:
+        require("../images/frontend/reactNative.png"),
+      },
+
+      {
         name: "React Js",
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
@@ -72,8 +78,8 @@ export const skills = [
       {
         name: "Angular",
         image:
-          "https://camo.githubusercontent.com/8886130b3d8aba95dbdd7c4f9a41029606424cc06d1873c1ced87dd55a222fef/68747470733a2f2f616e67756c61722e696f2f6173736574732f696d616765732f6c6f676f732f616e67756c61722f616e67756c61722e737667",
-      },
+        require("../images/frontend/angular.webp"),
+            },
       {
         name: "Bootstrap",
         image:
@@ -173,6 +179,26 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: require("../images/achiv/shipzzer.jpeg"),
+    role: "Software Engineer ",
+    company: "Shipzzer",
+    date: "Aug 2024 - Present",
+    desc: "• At Shipzzer, I contributed to creating web and mobile applications designed for managing maritime shipping operations and container logistics within port yards.\n" +
+    "The applications followed a SaaS model to ensure scalability and efficiency.\n" +
+    "• I actively participated in over 3 projects, working closely with teams to enhance the user experience through careful planning and task prioritization,\n" +
+    "which helped meet project goals and deadlines effectively.",
+  skills: [
+      "Angular",
+      "React Js",
+      "React Natice",
+      "Expres Js",
+      "Redux",
+      "Fire Base",
+      "Big Query"
+    ],
+  },
+  {
+    id: 1,
     img: require("../images/achiv/talan.png"),
     role: "Software Engineer Intern",
     company: "Talan Tunisie - Graduation Project ",
