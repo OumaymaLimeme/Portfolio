@@ -17,7 +17,7 @@ export const Bio = {
 
 export const skills = [
   {
-    title: "Programming Languages",
+    title: "Programmingggg Languages",
     skills: [
       {
         name: "JavaScript",
