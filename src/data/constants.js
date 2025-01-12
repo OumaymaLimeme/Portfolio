@@ -1,18 +1,15 @@
+import bigqueryIcon from "../images/devops/bigquery.svg";
 export const Bio = {
   name: "Oumeima Limeme",
-  roles: [
-    "Full Stack Developer",
-  ],
+  roles: ["Full Stack Developer"],
   description:
     "I’m a dedicated and versatile software engineer with a passion for creating web and mobile applications. I thrive on new challenges and focus on delivering efficient, high-quality solutions. With a growth mindset and commitment to innovation, I’m ready to contribute meaningfully to impactful projects.",
   github: "https://github.com/OumaymaLimeme",
-  resume:
-    require("../images/Oumeima_limeme_CV.pdf"),
+  resume: require("../images/Oumeima_limeme_CV.pdf"),
   linkedin: "https://www.linkedin.com/in/oumaymalimeme/",
   leetcode: "https://leetcode.com/Oumayma23/",
   facebook: "https://www.facebook.com/oumayma2000limeme",
-  email:"oumeimalimeme@gmail.com"
-
+  email: "oumeimalimeme@gmail.com",
 };
 
 export const skills = [
@@ -26,8 +23,7 @@ export const skills = [
       },
       {
         name: "TypeScript",
-        image:
-          require("../images/tools/typescript.svg").default,
+        image: require("../images/tools/typescript.svg").default,
       },
       {
         name: "Java",
@@ -36,23 +32,19 @@ export const skills = [
       },
       {
         name: "C++",
-        image:
-        require("../images/tools/cpp.png"),
+        image: require("../images/tools/cpp.png"),
       },
       {
         name: "C#",
-        image:
-         require("../images/tools/sharp.svg").default,
+        image: require("../images/tools/sharp.svg").default,
       },
       {
         name: "Python",
-        image:
-          require("../images/tools/Python.png"),
+        image: require("../images/tools/Python.png"),
       },
       {
         name: "PL/SQL",
-        image:
-        require("../images/tools/pl-sql.png"),
+        image: require("../images/tools/pl-sql.png"),
       },
     ],
   },
@@ -61,8 +53,7 @@ export const skills = [
     skills: [
       {
         name: "React Native",
-        image:
-        require("../images/frontend/reactNative.png"),
+        image: require("../images/frontend/reactNative.png"),
       },
 
       {
@@ -71,15 +62,20 @@ export const skills = [
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
       {
+        name: "Redux",
+        size: "500px",
+        image: require("../images/frontend/redux.png"),
+      },
+
+      {
         name: "Next Js",
         image:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
       },
       {
         name: "Angular",
-        image:
-        require("../images/frontend/angular.webp"),
-            },
+        image: require("../images/frontend/angular.webp"),
+      },
       {
         name: "Bootstrap",
         image:
@@ -87,14 +83,12 @@ export const skills = [
       },
       {
         name: "Tailwind",
-        image:
-         require("../images/frontend/tailwind.png"),
+        image: require("../images/frontend/tailwind.png"),
       },
       {
-        name:"Sass",
-        image:
-        require("../images/frontend/sass.png"),
-      }
+        name: "Sass",
+        image: require("../images/frontend/sass.png"),
+      },
     ],
   },
   {
@@ -111,9 +105,8 @@ export const skills = [
       },
       {
         name: "SpringBoot",
-       image:
-         require("../images/Backend/pngaaa.com-2459546.png"),
-     },
+        image: require("../images/Backend/pngaaa.com-2459546.png"),
+      },
       {
         name: ".NET",
         image: require("../images/Backend/NET_Core_Logo.svg.png"),
@@ -131,6 +124,16 @@ export const skills = [
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      },
+      ,
+      {
+        name: "Firebase",
+        image: require("../images/Backend/firebase.png"),
+      },
+      ,
+      {
+        name: "BiQquery",
+        image: bigqueryIcon,
       },
     ],
   },
@@ -151,27 +154,28 @@ export const skills = [
         name: "Git",
         image:
           "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png",
-      }
-       ],
+      },
+      {
+        name: "Google Cloud Platform",
+        image: require("../images/devops/gcp.png"),
+      },
+    ],
   },
   {
     title: "Test Tools",
     skills: [
       {
         name: "Cypress",
-        image:
-          require("../images/devops/cypress.png"),
+        image: require("../images/devops/cypress.png"),
       },
       {
         name: "Karma&Jasmin",
-        image:
-        require("../images/devops/karma-and-jasmine.webp"),
+        image: require("../images/devops/karma-and-jasmine.webp"),
       },
       {
         name: "Selenium",
-        image:
-        require("../images/devops/Selenium_Logo.png"),
-      }
+        image: require("../images/devops/Selenium_Logo.png"),
+      },
     ],
   },
 ];
@@ -183,18 +187,19 @@ export const experiences = [
     role: "Software Engineer ",
     company: "Shipzzer",
     date: "Aug 2024 - Present",
-    desc: "• At Shipzzer, I contributed to creating web and mobile applications designed for managing maritime shipping operations and container logistics within port yards.\n" +
-    "The applications followed a SaaS model to ensure scalability and efficiency.\n" +
-    "• I actively participated in over 3 projects, working closely with teams to enhance the user experience through careful planning and task prioritization,\n" +
-    "which helped meet project goals and deadlines effectively.",
-  skills: [
+    desc:
+      "• At Shipzzer, I contributed to creating web and mobile applications designed for managing maritime shipping operations and container logistics within port yards.\n" +
+      "The applications followed a SaaS model to ensure scalability and efficiency.\n" +
+      "• I actively participated in over 3 projects, working closely with teams to enhance the user experience through careful planning and task prioritization,\n" +
+      "which helped meet project goals and deadlines effectively.",
+    skills: [
       "Angular",
       "React Js",
       "React Natice",
       "Expres Js",
       "Redux",
       "Fire Base",
-      "Big Query"
+      "Big Query",
     ],
   },
   {
@@ -210,11 +215,11 @@ export const experiences = [
       "Einstein Analytics",
       "Community Cloud",
       "Flow Builder",
-      "Process Builder"
+      "Process Builder",
     ],
- //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+    //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
- /* {
+  /* {
     id: 1,
     img: require("../images/achiv/sakouhi.png"),
     role: "Software Engineer Intern",
@@ -250,28 +255,20 @@ export const experiences = [
   },
   {
     id: 3,
-    img:require("../images/achiv/pixemantic.png"),
+    img: require("../images/achiv/pixemantic.png"),
     role: "Software Engineer Intern",
     company: "Pixementic",
     date: "August 2022 - July 2022",
     desc: "• Developed front-end code to create a responsive web application that works across multiple devices, including desktop and tablets.",
-    skills: [
-      "Angular",
-      "JavaScript",
-      "Scss",
-      "Git",
-      "Github",
-
-    ],
+    skills: ["Angular", "JavaScript", "Scss", "Git", "Github"],
     doc: require("../images/doc/attestation.docx-1.png"),
   },
-
 ];
 
 export const education = [
   {
     id: 0,
-    img:  require("../images/achiv/Logo_ENICarthage.jpg"),
+    img: require("../images/achiv/Logo_ENICarthage.jpg"),
     school: "National Engineering School Of Carthage ( Enicarthage )",
     date: "Oct 2021 - Sep 2024",
     desc: " As a Software Engineering student, I delved into a comprehensive curriculum that not only deepened my understanding of software engineering principles but also provided hands-on experience in tackling real-world challenges.",
@@ -280,7 +277,8 @@ export const education = [
   {
     id: 1,
     img: require("../images/achiv/essths.png"),
-    school: "Higher School Of Science And Technology Of Hammam Sousse ( ESSTHS )",
+    school:
+      "Higher School Of Science And Technology Of Hammam Sousse ( ESSTHS )",
     date: "Oct 2019 - Sep 2021",
     desc: " I achieved a significant milestone by securing the 460th position among more than 1,700 students in the highly competitive national engineering school entrance exam which reflects my ability to excel under pressure.",
     degree: "Pre-enginerring studies",
@@ -301,18 +299,18 @@ export const projects = [
     date: "Jan 2023 - March 2023",
     description:
       "Our Project Goal is to create an application that helps run a medical office smoothly. People should be able to book appointments online and manage patient information easily. The idea is to make it user-friendly and upgrade the way medical practices handle their tasks to enhance the overall workflow.",
-      image : require("../images/projects/pp1.png"),
-      images: 
-    [{ imgPath : "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png"},    
-     {imgPath :"https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png" }],
-    tags: [ 
-      "Angular",
-      "Node Js",
-      "Express Js",
-      "MongoDB",
-      "Restful API",
-      "UML"
+    image: require("../images/projects/pp1.png"),
+    images: [
+      {
+        imgPath:
+          "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      },
+      {
+        imgPath:
+          "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      },
     ],
+    tags: ["Angular", "Node Js", "Express Js", "MongoDB", "Restful API", "UML"],
     category: "web app",
     github: "https://github.com/OumaymaLimeme/Cabinet_Management",
     webapp: "https://decisionhub.netlify.app/",
@@ -322,7 +320,7 @@ export const projects = [
         img: require("../images/other/manar.jpg"),
         linkedin: "https://www.linkedin.com/in/fareh-manar-a18b7027b/",
         github: "https://github.com/manarfareh",
-      }
+      },
     ],
   },
   {
@@ -331,16 +329,11 @@ export const projects = [
     date: "Jun 2023 - Jul 2023",
     description:
       "Our Road Network Data Collection Application addresses the growing challenge of managing traffic, which affects people's daily lives. Issues like traffic jams and accidents disrupt roads and cause inconvenience. Our solution involves gathering and monitoring data from various sources. We use algorithms to analyze this data, identifying traffic patterns, accidents, road closures, and weather information. The app features a user-friendly interface, designed for an easy and intuitive experience. Additionally, we've created REST/SOAP web services, allowing users to access, collect, and visualize data based on their queries or requests, providing a more efficient and tailored experience.",
-    image:require("../images/projects/p1.png"),
-    tags: [  
-      "ReactJs",
-      "Flask",
-      "SpringBoot",
-      "Postgres",
-      "JAX-WS",
-    ],
+    image: require("../images/projects/p1.png"),
+    tags: ["ReactJs", "Flask", "SpringBoot", "Postgres", "JAX-WS"],
     category: "web app",
-    github: "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
+    github:
+      "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
     webapp: "https://trackify-management.netlify.app/",
     member: [
       {
@@ -348,7 +341,7 @@ export const projects = [
         img: require("../images/other/manar.jpg"),
         linkedin: "https://www.linkedin.com/in/fareh-manar-a18b7027b/",
         github: "https://github.com/manarfareh",
-      }
+      },
     ],
   },
   {
@@ -357,7 +350,7 @@ export const projects = [
     date: "Apr 2023 - May 2023",
     description:
       "Developed a full-stack web application for our university's annual forum that showcases our institution, its activities, and assists administration in efficiently managing event requirements.",
-    image:require("../images/projects/p2.png"),
+    image: require("../images/projects/p2.png"),
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "web app",
     github: "https://github.com/OumaymaLimeme/Forum_website",
@@ -377,8 +370,15 @@ export const projects = [
     date: "Jan 2023 - Mar 2023",
     description:
       "The main goal of the project is to develop a tool capable of recognizing and extracting text from PDF documents written in Arabic using OCR techniques. It can be employed for digitizing and archiving printed Arabic documents  due to the automation of text extraction from PDFs that simplifies the digitization process.",
-    image:require("../images/projects/ocr.webp"),
-    tags: ["Python", "TensorFlow", "Pytesseract", "Scikit-learn", "Gensim","LDA model"],
+    image: require("../images/projects/ocr.webp"),
+    tags: [
+      "Python",
+      "TensorFlow",
+      "Pytesseract",
+      "Scikit-learn",
+      "Gensim",
+      "LDA model",
+    ],
     category: "machine learning",
     github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
     webapp: "https://github.com/rishavchanda/Brain-Tumor-Detection",
@@ -388,7 +388,7 @@ export const projects = [
         img: require("../images/other/manar.jpg"),
         linkedin: "https://www.linkedin.com/in/fareh-manar-a18b7027b/",
         github: "https://github.com/manarfareh",
-      }
+      },
     ],
   },
   {
@@ -407,11 +407,11 @@ export const projects = [
         name: "Khalil Mejri",
         img: require("../images/other/khalil.jpg"),
         linkedin: "https://www.linkedin.com/in/khalil-mejri-b04a5b21b/",
-      }
+      },
     ],
   },
   {
-    id:3,
+    id: 3,
     title: "Pixemantic's Website",
     date: "Jul 2021",
     description:
@@ -428,13 +428,24 @@ export const projects = [
     date: "Jun 2021",
     description:
       "The solution proposed by ADDINN during my internship aimed to automate its recruitment process by creating the 'e-recruitment' platform. This platform played a crucial role in the pre-selection of candidates, streamlining and optimizing the hiring workflow. As an additional security measure and to facilitate secure user authentication and authorization processes, the platform implemented JSON Web Tokens (JWT). JWT technology allowed for the secure generation and exchange of tokens, enhancing the overall integrity and confidentiality of the recruitment platform. This not only automated and expedited the recruitment procedures but also ensured that sensitive candidate data and interactions were handled with robust security protocols.",
-    image:  require("../images/projects/acceuil.png"),
-      tags: ["Angular", ".NET Core", "CQRS", "JWT", "Clean Architecture", "XUnit test", "GitLab", "Scrum" ],
+    image: require("../images/projects/acceuil.png"),
+    tags: [
+      "Angular",
+      ".NET Core",
+      "CQRS",
+      "JWT",
+      "Clean Architecture",
+      "XUnit test",
+      "GitLab",
+      "Scrum",
+    ],
     category: "web app",
-    github: "https://github.com/OumaymaLimeme/ADDINN-Tunisie-Internship-/tree/main?tab=readme-ov-file",
-    webapp: "https://github.com/OumaymaLimeme/ADDINN-Tunisie-Internship-/tree/main?tab=readme-ov-file",
+    github:
+      "https://github.com/OumaymaLimeme/ADDINN-Tunisie-Internship-/tree/main?tab=readme-ov-file",
+    webapp:
+      "https://github.com/OumaymaLimeme/ADDINN-Tunisie-Internship-/tree/main?tab=readme-ov-file",
   },
-/*  {
+  /*  {
     id: 5,
     title: "Breaking Bad",
     date: "Jun 2021",
@@ -469,8 +480,10 @@ export const projects = [
     image: require("../images/projects/p6.png"),
     tags: ["Python", "Keras", "TensorFlow", "MobileNet", "CNN", "OpenCV"],
     category: "machine learning",
-    github: "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
-    webapp: "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
+    github:
+      "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
+    webapp:
+      "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
   },
 ];
 export const acheivements = [
@@ -480,8 +493,8 @@ export const acheivements = [
     date: "April 29, 2023",
     description:
       " I am honored to have clinched the 3rd place in Code Her Ways 1.0, a Problem Solving competition for girls, demonstrating my proficiency and commitment to coding excellence.",
-    image:require("../images/achiv/1.jpg"),
-    tags: ["C++", "Problem Solving","Team work", "Time managment"],
+    image: require("../images/achiv/1.jpg"),
+    tags: ["C++", "Problem Solving", "Team work", "Time managment"],
   },
   {
     id: 1,
@@ -489,9 +502,8 @@ export const acheivements = [
     date: "Jan 2023 - Mar 2023",
     description:
       "considered globally as the oldest and most important computer programming competition. The idea behind this great challenge is to stimulate the reasoning of participants to find solutions optimized in terms of time and performance using the least resources.",
-      image:require("../images/achiv/tcpc.jpg"),
-    tags: ["C++", "Problem Solving","Team work", "Time managment"],
-
+    image: require("../images/achiv/tcpc.jpg"),
+    tags: ["C++", "Problem Solving", "Team work", "Time managment"],
   },
   {
     id: 2,
@@ -499,17 +511,17 @@ export const acheivements = [
     date: "Dec 15, 2022",
     description:
       "I proudly secured the 10th place in the SheSolves coding competition, organized by INSAT ACM Student Chapter and IEEE WIE INSAT Student Affinity Group, showcasing my skills and dedication in the event",
-      image:require("../images/achiv/oum.jpg"),
-    tags: ["C++", "Problem Solving","Team work", "Time managment"],
+    image: require("../images/achiv/oum.jpg"),
+    tags: ["C++", "Problem Solving", "Team work", "Time managment"],
   },
   {
-    id:3,
+    id: 3,
     title: "Freeways ISI 1.0",
     date: "Dec 15, 2022",
     description:
       "I achieved the 9th position in this coding competition, underscoring my competence and commitment during the event.",
-      image:require("../images/achiv/freeways.jpg"),
-    tags: ["C++", "Problem Solving","Team work", "Time managment"],
+    image: require("../images/achiv/freeways.jpg"),
+    tags: ["C++", "Problem Solving", "Team work", "Time managment"],
   },
 ];
 

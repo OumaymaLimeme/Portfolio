@@ -124,7 +124,7 @@ function Footer() {
 
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Oumeima Limeme. All rights reserved.
+          &copy; 2025 Oumeima Limeme. All rights reserved.
         </Copyright>
 
       </FooterWrapper>
