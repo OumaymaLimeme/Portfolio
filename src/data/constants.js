@@ -1,9 +1,8 @@
 import bigqueryIcon from "../images/devops/bigquery.svg";
 export const Bio = {
   name: "Oumeima Limeme",
-  roles: ["Full Stack Developer"],
-  description:
-    "I’m a dedicated and versatile software engineer with a passion for creating web and mobile applications. I thrive on new challenges and focus on delivering efficient, high-quality solutions. With a growth mindset and commitment to innovation, I’m ready to contribute meaningfully to impactful projects.",
+  roles: ["Junior Software Engineer"],
+  description: "I'm a dedicated and versatile Software Engineer with a deep ❤️ for building web and mobile applications. I thrive on challenges, constantly pushing myself to learn and grow💡.With a growth mindset, I'm excited to contribute to forward-thinking solutions that make a difference 🌍✨.",
   github: "https://github.com/OumaymaLimeme",
   resume: require("../images/Oumeima_limeme_CV.pdf"),
   linkedin: "https://www.linkedin.com/in/oumaymalimeme/",
@@ -14,7 +13,7 @@ export const Bio = {
 
 export const skills = [
   {
-    title: "Programmingggg Languages",
+    title: "Programming Languages",
     skills: [
       {
         name: "JavaScript",
@@ -190,15 +189,16 @@ export const experiences = [
     desc:
       "• At Shipzzer, I contributed to creating web and mobile applications designed for managing maritime shipping operations and container logistics within port yards.\n" +
       "The applications followed a SaaS model to ensure scalability and efficiency.\n" +
-      "• I actively participated in over 3 projects, working closely with teams to enhance the user experience through careful planning and task prioritization,\n" +
+      "• I actively participated in over 4 projects, working closely with teams to enhance the user experience through careful planning and task prioritization,\n" +
       "which helped meet project goals and deadlines effectively.",
     skills: [
       "Angular",
       "React Js",
-      "React Natice",
-      "Expres Js",
+      "React Native",
+      "Express Js",
       "Redux",
-      "Fire Base",
+      "Firebase",
+      "Google Cloud Function",
       "Big Query",
     ],
   },
