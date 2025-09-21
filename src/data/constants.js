@@ -294,7 +294,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 11,
+    id: 1,
     title: "HEALTHCARE",
     date: "Jan 2023 - March 2023",
     description:
@@ -313,7 +313,7 @@ export const projects = [
     tags: ["Angular", "Node Js", "Express Js", "MongoDB", "Restful API", "UML"],
     category: "web app",
     github: "https://github.com/OumaymaLimeme/Cabinet_Management",
-    webapp: "https://decisionhub.netlify.app/",
+    webapp: "https://github.com/OumaymaLimeme/Cabinet_Management",
     member: [
       {
         name: "Manar Fareh",
@@ -324,7 +324,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 2,
     title: "Road Network Data Collection Application",
     date: "Jun 2023 - Jul 2023",
     description:
@@ -334,7 +334,7 @@ export const projects = [
     category: "web app",
     github:
       "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
-    webapp: "https://trackify-management.netlify.app/",
+    webapp: "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
     member: [
       {
         name: "Manar Fareh",
@@ -345,7 +345,7 @@ export const projects = [
     ],
   },
   {
-    id: 0,
+    id: 3,
     title: "Enicarthage FEE",
     date: "Apr 2023 - May 2023",
     description:
@@ -365,7 +365,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 4,
     title: "Classification system for arabic PDF document",
     date: "Jan 2023 - Mar 2023",
     description:
@@ -380,8 +380,8 @@ export const projects = [
       "LDA model",
     ],
     category: "machine learning",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://github.com/rishavchanda/Brain-Tumor-Detection",
+    github: "https://github.com/OumaymaLimeme/Arabic_OCR",
+    webapp: "https://github.com/OumaymaLimeme/Arabic_OCR",
     member: [
       {
         name: "Manar Fareh",
@@ -392,7 +392,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "Music Player App",
     date: "Dec 2022 - Feb 2022",
     description:
@@ -400,8 +400,8 @@ export const projects = [
     image: require("../images/projects/p5.png"),
     tags: ["Java", "JavaFX", "MVC", "MySQL"],
     category: "android app",
-    github: "https://github.com/rishavchanda/Buckoid-Android-App",
-    webapp: "https://github.com/rishavchanda/Buckoid-Android-App",
+    github: "https://github.com/OumaymaLimeme/Music_Player",
+    webapp: "https://github.com/OumaymaLimeme/Music_Player",
     member: [
       {
         name: "Khalil Mejri",
@@ -411,7 +411,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id:6,
     title: "Pixemantic's Website",
     date: "Jul 2021",
     description:
@@ -423,7 +423,7 @@ export const projects = [
     webapp: "https://github.com/OumaymaLimeme/Pixemantic-Intership/tree/main",
   },
   {
-    id: 4,
+    id: 7,
     title: "E-recrutement Web app",
     date: "Jun 2021",
     description:
@@ -472,7 +472,7 @@ export const projects = [
     webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },*/
   {
-    id: 7,
+    id: 8,
     title: "Face Recognition",
     date: "Jan 2023",
     description:
@@ -485,6 +485,29 @@ export const projects = [
     webapp:
       "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
   },
+   {
+    id: 9,
+    title: "Grammar Checker",
+    date: "Sep 2025",
+    description: "A simple and lightweight web application that helps users check grammar in English, French, and German",
+    image: require("../images/projects/grammar.png"),
+    tags: ["React","Next Js", "Tailwind", "JavaScript", "Git", "Languagetool API"],
+    category: "Ai projects",
+    github: "https://github.com/OumaymaLimeme/Grammar-Checker",
+    webapp: "https://github.com/OumaymaLimeme/Grammar-Checker",
+  },
+   {
+    id: 10,
+    title: "ChatBot",
+    date: "Jun 2024",
+    description: "Designed and built a full-stack multilingual chatbot platform that provides grammar checking in English, French, and German. The project combines a React and Next.js front end styled with Tailwind CSS, a FastAPI backend connected to a PostgreSQL database, and integration with GROQ API and LLMChain for real-time AI-powered grammar analysis. The application offers a smooth user experience with accurate language support and scalable architecture.",
+    image: require("../images/projects/chat.png"),
+    tags: ["React","Next Js", "Tailwind", "JavaScript", "Python","FastAPI" ,"PostgreSQL","GROQ_API","LLMChain"],
+    category: "Ai projects",
+    github: "https://github.com/OumaymaLimeme/taho-chatbot-frontend",
+    webapp: "https://drive.google.com/file/d/1bWydmMDwCvFNxKxfcntU9ZGF_kh6C78R/view",
+  },
+
 ];
 export const acheivements = [
   {
