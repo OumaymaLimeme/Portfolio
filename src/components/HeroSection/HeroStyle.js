@@ -145,7 +145,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: hsla(213, 84%, 58%, 0.884);
+  color: #00C9FF;
   cursor: pointer;
 `;
 
@@ -174,20 +174,18 @@ export const ResumeButton = styled.a`
     max-width: 230px;
     text-align: center;
     padding: 10px 0;
-    color:${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.black};
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    background: hsla(213, 84%, 58%, 0.884);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+    background: linear-gradient(135deg, #00C9FF 0%, #0077B6 100%);
+    box-shadow: 0px 0px 24px rgba(0, 201, 255, 0.3);
     &:hover {
         transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
+        transition: all 0.4s ease-in-out;
+        box-shadow: 0px 0px 40px rgba(0, 201, 255, 0.5);
     }    
     
     
