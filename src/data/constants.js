@@ -182,13 +182,41 @@ export const skills = [
     ],
   },
 ];
+export const languages = [
+  {
+    name: "Arabic",
+    proficiency: "Native",
+    flag: "🇹🇳",
+    level: 100,
+  },
+  {
+    name: "French",
+    proficiency: "Elementary · B1",
+    flag: "🇫🇷",
+    level: 55,
+  },
+  {
+    name: "English",
+    proficiency: "Professional · B2",
+    flag: "🇬🇧",
+    level: 82,
+  },
+  {
+    name: "German",
+    proficiency: "Elementary · B1",
+    flag: "🇩🇪",
+    level: 55,
+  },
+];
+
 export const experiences = [
   {
     id: 0,
     img: require("../images/achiv/Unisphere.webp"),
     role: "Front-End Engineer",
     company: "Unisphere GmbH",
-    date: "Feb 2026 – Present",
+    location: "Germany · On-site",
+    date: "Jan 2026 – Present",
     desc:
       "• Led front-end development of an aviation mission operations platform for Advanced Air Mobility (AAM), delivering real-time vertiport monitoring to support safety-critical operational decision-making.\n" +
       "• Built modular UI components for real-time aviation dashboards, reducing initial rendering time by 75ms while maintaining high reliability under continuous data loads.\n" +
@@ -200,7 +228,8 @@ export const experiences = [
     img: require("../images/achiv/evimo.png"),
     role: "Full-Stack Software Engineer",
     company: "EVIMO",
-    date: "Nov 2025 – Feb 2026",
+    location: "Tunisia · Remote",
+    date: "Nov 2025 – Jan 2026",
     desc:
       "• Architected EVIMO from the ground up — an AI-powered maintenance platform for EV charging infrastructure, delivering org management, asset tracking, and user admin across 50+ operational teams.\n" +
       "• Implemented secure multi-tenant authentication and authorization with role-based access control.\n" +
@@ -213,6 +242,7 @@ export const experiences = [
     img: require("../images/achiv/shipzzer.jpeg"),
     role: "Full-Stack Software Engineer",
     company: "Shipzzer",
+    location: "Tunisia · On-site",
     date: "Aug 2024 – Oct 2025",
     desc:
       "• Delivered 4 mission-critical features across Shipzzer's logistics SaaS platform (web & mobile), processing 500+ container operations daily and improving yard management efficiency.\n" +
@@ -226,6 +256,7 @@ export const experiences = [
     img: require("../images/achiv/talan.png"),
     role: "Software Engineer Intern",
     company: "Talan Tunisie",
+    location: "Tunisia · On-site",
     date: "Feb 2024 – Jun 2024",
     desc:
       "• Built and deployed a credit management application on Salesforce, automating 80% of previously manual credit workflows end-to-end.\n" +

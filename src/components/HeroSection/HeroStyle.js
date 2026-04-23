@@ -97,17 +97,25 @@ export const Img = styled.img`
   position: relative;
   width: 100%;
   height: 90%;
-  max-width: 290px;
-  max-height: 350px;
-  border-radius: 2%;
+  max-width: 300px;
+  max-height: 360px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 201, 255, 0.25);
+  box-shadow: 0 0 40px rgba(0, 201, 255, 0.18), 0 20px 60px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 60px rgba(0, 201, 255, 0.35), 0 24px 60px rgba(0, 0, 0, 0.5);
+  }
   @media (max-width: 768px) {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 380px;
+    max-height: 380px;
   }
 
   @media (max-width: 640px) {
-    max-width: 280px;
-    max-height: 280px;
+    max-width: 260px;
+    max-height: 260px;
   }
 `;
 
@@ -124,6 +132,27 @@ export const Title = styled.div`
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
+  }
+`;
+
+export const Tagline = styled.div`
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  color: ${({ theme }) => theme.primary};
+  margin-bottom: 18px;
+  line-height: 1.6;
+  opacity: 0.85;
+  padding-left: 16px;
+  border-left: 3px solid ${({ theme }) => theme.primary};
+  @media (max-width: 960px) {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+    border-top: none;
+  }
+  @media (max-width: 640px) {
+    font-size: 13px;
   }
 `;
 

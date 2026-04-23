@@ -39,14 +39,23 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
+  &::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 3px;
+    background: linear-gradient(90deg, #00C9FF, #0077B6);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
   @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
+    margin-top: 12px;
+    font-size: 32px;
   }
 `;
 

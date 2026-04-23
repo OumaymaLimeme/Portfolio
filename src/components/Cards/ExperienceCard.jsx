@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const Document = styled.img`
     display: none;
@@ -25,12 +26,13 @@ const Description = styled.div`
 `
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: pre-line;
 `
 
 const Card = styled.div`
@@ -119,6 +121,19 @@ const Date = styled.div`
     }
 `
 
+const Location = styled.div`
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.primary};
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+    }
+`
+
 
 const Skills = styled.div`
     width: 100%;
@@ -134,11 +149,16 @@ const ItemWrapper = styled.div`
 `
 
 const Skill = styled.div`
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
+    background: rgba(0, 201, 255, 0.08);
+    border: 1px solid rgba(0, 201, 255, 0.2);
+    border-radius: 20px;
+    padding: 3px 10px;
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 11px;
+        padding: 2px 8px;
     }
 `
 
@@ -153,6 +173,12 @@ const ExperienceCard = ({ experience }) => {
                     <Role>{experience.role}</Role>
                     <Company>{experience.company}</Company>
                     <Date>{experience.date}</Date>
+                    {experience.location && (
+                        <Location>
+                            <FaMapMarkerAlt size={10} />
+                            {experience.location}
+                        </Location>
+                    )}
                 </Body>
             </Top>
             <Description>
@@ -164,10 +190,9 @@ const ExperienceCard = ({ experience }) => {
                     <>
                         <br />
                         <Skills>
-                            <b>Skills:</b>
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
+                                    <Skill key={index}>{skill}</Skill>
                                 ))}
                             </ItemWrapper>
                         </Skills>

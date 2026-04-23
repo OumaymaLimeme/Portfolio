@@ -111,6 +111,7 @@ function Footer() {
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
           <NavLink href="#acheivements">Acheivements</NavLink>
+          <NavLink href="#languages">Languages</NavLink>
         </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>

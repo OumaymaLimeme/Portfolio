@@ -11,6 +11,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
+          <span style={{ fontWeight: 700, fontSize: '18px', color: '#00C9FF', letterSpacing: '0.5px' }}>Oumeima</span>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
@@ -24,6 +25,7 @@ const Navbar = () => {
           <NavLink href='#projects'>Projects</NavLink>
           <NavLink href='#education'>Education</NavLink>
           <NavLink href='#acheivements'>Acheivements</NavLink>
+          <NavLink href='#languages'>Languages</NavLink>
           <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
@@ -47,14 +49,9 @@ const Navbar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <MobileLink href='#acheivements' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>
-            </MobileLink>
-            <MobileLink href='#contact' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>
-            </MobileLink>
+            <MobileLink href='#acheivements' onClick={() => setIsOpen(!isOpen)}>Acheivements</MobileLink>
+            <MobileLink href='#languages' onClick={() => setIsOpen(!isOpen)}>Languages</MobileLink>
+            <MobileLink href='#contact' onClick={() => setIsOpen(!isOpen)}>Contact</MobileLink>
             <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
           </MobileMenu>
         }
