@@ -1,11 +1,9 @@
 import bigqueryIcon from "../images/devops/bigquery.svg";
 export const Bio = {
   name: "Oumeima Limeme",
-  roles: [
-    "Full-Stack Engineer"
-  ],
+  roles: ["Full-Stack Engineer"],
   description:
-    "Full-Stack Engineer with 2 years shipping distributed systems across Advanced Air Mobility platforms, EV charging infrastructure, and logistics SaaS. I build for correctness, uptime, and scale.",
+    "Full-Stack Engineer with 2+ years of experience shipping web and mobile products. I am driven by a passion for clean code, automated workflows, and building scalable applications using modern technologies. My goal is always to deliver measurable impact — from reducing technical debt and manual interventions to automating complex operational tasks.",
   github: "https://github.com/OumaymaLimeme",
   resume: require("../images/Oumeima_limeme_CV.pdf"),
   linkedin: "https://www.linkedin.com/in/oumaymalimeme/",
@@ -87,8 +85,7 @@ export const skills = [
       },
       {
         name: "Material UI",
-        image:
-          "https://mui.com/static/logo.png",
+        image: "https://mui.com/static/logo.png",
       },
       {
         name: "Ant Design",
@@ -106,8 +103,7 @@ export const skills = [
       },
       {
         name: "NestJS",
-        image:
-          "https://nestjs.com/img/logo-small.svg",
+        image: "https://nestjs.com/img/logo-small.svg",
       },
       {
         name: "Express.js",
@@ -134,8 +130,7 @@ export const skills = [
       },
       {
         name: "Prisma",
-        image:
-          "https://avatars.githubusercontent.com/u/17219288?s=200&v=4",
+        image: "https://avatars.githubusercontent.com/u/17219288?s=200&v=4",
       },
       {
         name: "Firebase",
@@ -157,8 +152,7 @@ export const skills = [
       },
       {
         name: "GitHub Actions",
-        image:
-          "https://avatars.githubusercontent.com/u/44036562?s=200&v=4",
+        image: "https://avatars.githubusercontent.com/u/44036562?s=200&v=4",
       },
       {
         name: "AWS",
@@ -219,9 +213,18 @@ export const experiences = [
     date: "Jan 2026 – Present",
     desc:
       "• Led front-end development of an aviation mission operations platform for Advanced Air Mobility (AAM), delivering real-time vertiport monitoring to support safety-critical operational decision-making.\n" +
-      "• Built modular UI components for real-time aviation dashboards, reducing initial rendering time by 75ms while maintaining high reliability under continuous data loads.\n" +
-      "• Delivered interactive geospatial map modules covering vertiports, flight trajectories, and operational zones with live data feeds, measurably reducing operator situational assessment time.",
-    skills: ["Vue.js", "Pinia", "TypeScript", "JavaScript", "AWS", "REST APIs", "CI/CD", "Agile/Scrum"],
+      "• Built modular UI components for real-time aviation dashboards while maintaining high reliability under continuous data loads.\n" +
+      "• Delivered interactive geospatial map modules covering vertiports, flight trajectories, and operational zones with live data feeds.",
+    skills: [
+      "Vue.js",
+      "Pinia",
+      "TypeScript",
+      "JavaScript",
+      "AWS",
+      "REST APIs",
+      "CI/CD",
+      "Agile/Scrum",
+    ],
   },
   {
     id: 1,
@@ -235,7 +238,18 @@ export const experiences = [
       "• Implemented secure multi-tenant authentication and authorization with role-based access control.\n" +
       "• Structured backend microservices following Clean Architecture, DDD, and CQRS — reducing code coupling by 40%.\n" +
       "• Automated API documentation with Swagger/OpenAPI and established CI/CD pipelines via GitHub Actions.",
-    skills: ["React", "Next.js", "NestJS", "Prisma", "PostgreSQL", "Docker", "DDD", "CQRS", "TurboRepo", "GitHub Actions"],
+    skills: [
+      "React",
+      "Next.js",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "Docker",
+      "DDD",
+      "CQRS",
+      "TurboRepo",
+      "GitHub Actions",
+    ],
   },
   {
     id: 2,
@@ -249,7 +263,16 @@ export const experiences = [
       "• Reduced manual support interventions by 40% by shipping self-service platform features, freeing engineering and operations capacity for higher-value work.\n" +
       "• Refactored the admin management module handling employee presence monitoring and yard role assignment, used daily by 100+ users.\n" +
       "• Identified and resolved security vulnerabilities across a 60k+ line codebase.",
-    skills: ["React.js", "Angular", "React Native", "Redux", "Express.js", "TypeScript", "Firebase", "GCP"],
+    skills: [
+      "React.js",
+      "Angular",
+      "React Native",
+      "Redux",
+      "Express.js",
+      "TypeScript",
+      "Firebase",
+      "GCP",
+    ],
   },
   {
     id: 3,
@@ -262,7 +285,13 @@ export const experiences = [
       "• Built and deployed a credit management application on Salesforce, automating 80% of previously manual credit workflows end-to-end.\n" +
       "• Designed an Experience Cloud portal streamlining the credit application process for employees.\n" +
       "• Configured 10+ automated workflows and triggers, reducing manual intervention and accelerating approval cycles.",
-    skills: ["Apex", "SOQL", "Lightning Web Components", "Flows", "Salesforce Community Cloud"],
+    skills: [
+      "Apex",
+      "SOQL",
+      "Lightning Web Components",
+      "Flows",
+      "Salesforce Community Cloud",
+    ],
   },
 ];
 
@@ -293,7 +322,15 @@ export const projects = [
     description:
       "Full-stack e-commerce platform supporting 200+ products for the Tunisian retail market in Canada. Covers product catalog management, shopping cart, secure checkout, and user authentication. Owned the full SDLC — from requirements gathering and UI prototyping to deployment and CI/CD configuration.",
     image: require("../images/projects/work.jpg"),
-    tags: ["React", "Next.js", "Spring Boot", "OAuth 2.0", "PostgreSQL", "Tailwind CSS", "GitHub Actions"],
+    tags: [
+      "React",
+      "Next.js",
+      "Spring Boot",
+      "OAuth 2.0",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "GitHub Actions",
+    ],
     category: "web app",
     github: "https://github.com/OumaymaLimeme",
     webapp: "https://github.com/OumaymaLimeme",
@@ -339,7 +376,8 @@ export const projects = [
     category: "web app",
     github:
       "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
-    webapp: "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
+    webapp:
+      "https://github.com/OumaymaLimeme/Road-Network-Data-Collection-Application",
     member: [
       {
         name: "Manar Fareh",
@@ -416,7 +454,7 @@ export const projects = [
     ],
   },
   {
-    id:6,
+    id: 6,
     title: "Pixemantic's Website",
     date: "Jul 2021",
     description:
@@ -490,29 +528,48 @@ export const projects = [
     webapp:
       "https://github.com/OumaymaLimeme/Recognition-of-Emotions-by-Analysis-of-Facial-Expressions",
   },
-   {
+  {
     id: 9,
     title: "Grammar Checker",
     date: "Sep 2025",
-    description: "A simple and lightweight web application that helps users check grammar in English, French, and German",
+    description:
+      "A simple and lightweight web application that helps users check grammar in English, French, and German",
     image: require("../images/projects/grammar.png"),
-    tags: ["React","Next Js", "Tailwind", "JavaScript", "Git", "Languagetool API"],
+    tags: [
+      "React",
+      "Next Js",
+      "Tailwind",
+      "JavaScript",
+      "Git",
+      "Languagetool API",
+    ],
     category: "Ai projects",
     github: "https://github.com/OumaymaLimeme/Grammar-Checker",
     webapp: "https://github.com/OumaymaLimeme/Grammar-Checker",
   },
-   {
+  {
     id: 10,
     title: "ChatBot",
     date: "Jun 2024",
-    description: "Designed and built a full-stack multilingual chatbot platform that provides grammar checking in English, French, and German. The project combines a React and Next.js front end styled with Tailwind CSS, a FastAPI backend connected to a PostgreSQL database, and integration with GROQ API and LLMChain for real-time AI-powered grammar analysis. The application offers a smooth user experience with accurate language support and scalable architecture.",
+    description:
+      "Designed and built a full-stack multilingual chatbot platform that provides grammar checking in English, French, and German. The project combines a React and Next.js front end styled with Tailwind CSS, a FastAPI backend connected to a PostgreSQL database, and integration with GROQ API and LLMChain for real-time AI-powered grammar analysis. The application offers a smooth user experience with accurate language support and scalable architecture.",
     image: require("../images/projects/chat.png"),
-    tags: ["React","Next Js", "Tailwind", "JavaScript", "Python","FastAPI" ,"PostgreSQL","GROQ_API","LLMChain"],
+    tags: [
+      "React",
+      "Next Js",
+      "Tailwind",
+      "JavaScript",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "GROQ_API",
+      "LLMChain",
+    ],
     category: "Ai projects",
     github: "https://github.com/OumaymaLimeme/taho-chatbot-frontend",
-    webapp: "https://drive.google.com/file/d/1bWydmMDwCvFNxKxfcntU9ZGF_kh6C78R/view",
+    webapp:
+      "https://drive.google.com/file/d/1bWydmMDwCvFNxKxfcntU9ZGF_kh6C78R/view",
   },
-
 ];
 export const acheivements = [
   {

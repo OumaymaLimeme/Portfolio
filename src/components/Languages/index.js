@@ -1,6 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import { languages } from '../../data/constants'
+import React from "react";
+import styled from "styled-components";
+import { languages } from "../../data/constants";
+import { useTranslation } from "react-i18next";
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const Container = styled.div`
   @media (max-width: 960px) {
     padding: 20px 0px 60px 0px;
   }
-`
+`;
 
 const Wrapper = styled.div`
   position: relative;
@@ -25,7 +26,7 @@ const Wrapper = styled.div`
   max-width: 1100px;
   gap: 12px;
   padding: 0 16px;
-`
+`;
 
 const Title = styled.div`
   font-size: 42px;
@@ -34,11 +35,11 @@ const Title = styled.div`
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 56px;
     height: 3px;
-    background: linear-gradient(90deg, #00C9FF, #0077B6);
+    background: linear-gradient(90deg, #00c9ff, #0077b6);
     margin: 10px auto 0;
     border-radius: 2px;
   }
@@ -46,7 +47,7 @@ const Title = styled.div`
     margin-top: 12px;
     font-size: 32px;
   }
-`
+`;
 
 const Desc = styled.div`
   font-size: 18px;
@@ -56,7 +57,7 @@ const Desc = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
   }
-`
+`;
 
 const LanguagesGrid = styled.div`
   display: flex;
@@ -65,7 +66,7 @@ const LanguagesGrid = styled.div`
   justify-content: center;
   margin-top: 36px;
   width: 100%;
-`
+`;
 
 const LanguageCard = styled.div`
   background: ${({ theme }) => theme.card};
@@ -78,7 +79,9 @@ const LanguageCard = styled.div`
   align-items: center;
   gap: 14px;
   min-width: 200px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   &:hover {
     transform: translateY(-6px);
     box-shadow: rgba(0, 201, 255, 0.2) 0px 8px 32px;
@@ -87,19 +90,19 @@ const LanguageCard = styled.div`
     min-width: 150px;
     padding: 20px 24px;
   }
-`
+`;
 
 const Flag = styled.span`
   font-size: 48px;
   line-height: 1;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
-`
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+`;
 
 const LangName = styled.div`
   font-size: 20px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
-`
+`;
 
 const LevelBadge = styled.div`
   font-size: 13px;
@@ -110,7 +113,7 @@ const LevelBadge = styled.div`
   border-radius: 20px;
   padding: 4px 14px;
   letter-spacing: 0.3px;
-`
+`;
 
 const ProgressBar = styled.div`
   width: 100%;
@@ -118,22 +121,23 @@ const ProgressBar = styled.div`
   background: rgba(255, 255, 255, 0.08);
   border-radius: 4px;
   overflow: hidden;
-`
+`;
 
 const ProgressFill = styled.div`
   height: 100%;
   width: ${({ level }) => level}%;
-  background: linear-gradient(90deg, #00C9FF, #0077B6);
+  background: linear-gradient(90deg, #00c9ff, #0077b6);
   border-radius: 4px;
   transition: width 0.6s ease;
-`
+`;
 
 const Languages = () => {
+  const { t } = useTranslation();
   return (
     <Container id="languages">
       <Wrapper>
-        <Title>Languages</Title>
-        <Desc>Human languages I communicate in professionally and personally.</Desc>
+        <Title>{t("languages.title")}</Title>
+        <Desc>{t("languages.desc")}</Desc>
         <LanguagesGrid>
           {languages.map((lang, index) => (
             <LanguageCard key={index}>
@@ -148,7 +152,7 @@ const Languages = () => {
         </LanguagesGrid>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Languages
+export default Languages;

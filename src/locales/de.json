@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "education": "Bildung",
+    "achievements": "Erfolge",
+    "languages": "Sprachen",
+    "contact": "Kontakt",
+    "github": "Github",
+    "githubProfile": "Github Profil"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "tagline": "Jeder Softwareingenieur wird von einer Vision für die Zukunft angetrieben",
+    "iam": "Ich bin",
+    "resume": "Lebenslauf ansehen",
+    "description": "Full-Stack-Entwicklerin (2+ Jahre Erfahrung) mit Fokus auf saubere Architektur und wirkungsstarke Automatisierung. Ich verwandle komplexe Workflows in skalierbare digitale Produkte."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "desc": "Hier sind einige meiner Fähigkeiten, an denen ich die letzten 5 Jahre gearbeitet habe.",
+    "categories": ["Programmiersprachen", "Frontend", "Backend", "DevOps & Cloud"]
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "desc": "Ich verfüge über Berufserfahrung als Softwareentwicklerin und habe an vielfältigen Projekten in verschiedenen Unternehmen gearbeitet.",
+    "items": {
+      "0": {
+        "role": "Front-End-Entwicklerin",
+        "desc": "• Leitete die Frontend-Entwicklung einer Luftfahrt-Operationsplattform für Advanced Air Mobility (AAM) und lieferte Echtzeit-Vertiport-Monitoring zur Unterstützung sicherheitskritischer operativer Entscheidungsfindung.\n• Entwickelte modulare UI-Komponenten für Echtzeit-Luftfahrt-Dashboards unter Gewährleistung hoher Zuverlässigkeit bei kontinuierlichen Datenlasten.\n• Lieferte interaktive geospatiale Kartenmodule für Vertiports, Flugtrajektorien und Betriebszonen mit Live-Datenfeeds."
+      },
+      "1": {
+        "role": "Full-Stack-Softwareentwicklerin",
+        "desc": "• Entwickelte EVIMO von Grund auf – eine KI-gestützte Wartungsplattform für EV-Ladeinfrastruktur mit Organisationsverwaltung, Asset-Tracking und Benutzeradministration für 50+ Teams.\n• Implementierte sichere Multi-Tenant-Authentifizierung und Autorisierung mit rollenbasierter Zugriffskontrolle.\n• Strukturierte Backend-Microservices nach Clean Architecture, DDD und CQRS – Reduzierung der Code-Kopplung um 40 %.\n• Automatisierte API-Dokumentation mit Swagger/OpenAPI und etablierte CI/CD-Pipelines über GitHub Actions."
+      },
+      "2": {
+        "role": "Full-Stack-Softwareentwicklerin",
+        "desc": "• Lieferte 4 geschäftskritische Features für Shipzzer's Logistik-SaaS-Plattform (Web & Mobile), die täglich 500+ Container-Operationen verarbeitet.\n• Reduzierte manuelle Support-Eingriffe um 40 % durch Self-Service-Features und schuf Kapazitäten für höherwertige Aufgaben.\n• Refaktorierte das Admin-Verwaltungsmodul für Anwesenheitsüberwachung und Rollenzuweisung, das täglich von 100+ Nutzern verwendet wird.\n• Identifizierte und behob Sicherheitslücken in einer Codebasis mit 60.000+ Zeilen."
+      },
+      "3": {
+        "role": "Softwareentwicklerin (Praktikum)",
+        "desc": "• Entwickelte und deployte eine Kreditverwaltungsanwendung auf Salesforce und automatisierte 80 % der manuellen Kreditprozesse.\n• Gestaltete ein Experience Cloud Portal zur Vereinfachung des Kreditantragsprozesses für Mitarbeitende.\n• Konfigurierte 10+ automatisierte Workflows und Trigger, reduzierte manuelle Eingriffe und beschleunigte Genehmigungszyklen."
+      }
+    }
+  },
+  "education": {
+    "title": "Bildung",
+    "desc": "Meine Ausbildung war eine Reise der Selbstentdeckung und des Wachstums. Meine Bildungsdetails sind wie folgt.",
+    "items": {
+      "0": {
+        "degree": "Ingenieurabschluss in Informatik",
+        "desc": "Ingenieurstudium Informatik – umfassendes Curriculum in Softwareentwicklung, verteilten Systemen, Algorithmen und Systemdesign mit praktischer Projekterfahrung."
+      },
+      "1": {
+        "degree": "Vorbereitungszyklus – Mathematik & Physik",
+        "desc": "Vorbereitungszyklus in Mathematik & Physik. Unter den besten 25 % national – Platz 464 von 1.800 Kandidaten bei der Aufnahmeprüfung für Ingenieurschulen."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "desc": "Ich habe an einer Vielzahl von Projekten gearbeitet. Von Web-Apps bis hin zu Android-Apps. Hier sind einige meiner Projekte.",
+    "all": "Alle",
+    "webApp": "WEB APPS",
+    "androidApp": "ANDROID APPS",
+    "machineLearning": "MASCHINELLES LERNEN",
+    "aiProjects": "KI-PROJEKTE",
+    "viewCode": "Code ansehen",
+    "viewLiveApp": "Live-App ansehen",
+    "members": "Mitglieder",
+    "items": {
+      "0": {
+        "title": "E-Commerce-Plattform",
+        "description": "Full-Stack E-Commerce-Plattform mit 200+ Produkten für den tunesischen Einzelhandelsmarkt in Kanada. Umfasst Produktkatalogverwaltung, Warenkorb, sicheres Checkout und Benutzerauthentifizierung. Verantwortlich für den gesamten SDLC – von der Anforderungsaufnahme bis zur CI/CD-Konfiguration."
+      },
+      "1": {
+        "title": "Gesundheitswesen",
+        "description": "Ziel des Projekts war die Entwicklung einer Anwendung für eine reibungslose Verwaltung einer Arztpraxis. Patienten können online Termine buchen und ihre Informationen einfach verwalten. Die Anwendung verbessert den gesamten Arbeitsablauf der Praxis."
+      },
+      "2": {
+        "title": "Straßennetz-Datenerfassungsanwendung",
+        "description": "Die Anwendung adressiert die wachsende Herausforderung der Verkehrsverwaltung. Sie sammelt und überwacht Daten aus verschiedenen Quellen und analysiert Verkehrsmuster, Unfälle, Straßensperrungen und Wetterinformationen über eine benutzerfreundliche REST/SOAP-Webservice-Schnittstelle."
+      },
+      "3": {
+        "title": "Enicarthage FEE",
+        "description": "Entwicklung einer Full-Stack-Webanwendung für das jährliche Universitätsforum, die die Institution und ihre Aktivitäten präsentiert und die Verwaltung bei der effizienten Veranstaltungsplanung unterstützt."
+      },
+      "4": {
+        "title": "Klassifizierungssystem für arabische PDF-Dokumente",
+        "description": "Ziel des Projekts ist die Entwicklung eines Tools zur Texterkennung und -extraktion aus arabischen PDF-Dokumenten mittels OCR-Techniken. Es ermöglicht die Digitalisierung und Archivierung gedruckter arabischer Dokumente."
+      },
+      "5": {
+        "title": "Musik-Player-App",
+        "description": "Diese Desktop-Anwendung ermöglicht das einfache Finden, Organisieren und Personalisieren von Lieblingsmusik. Entwickelt mit Java in MVC-Architektur."
+      },
+      "6": {
+        "title": "Pixemantic-Website",
+        "description": "Während meines Praktikums bei Pixemantic als Erststudierende an der ENICarthage war ich für das Frontend der offiziellen Website verantwortlich und entwickelte eine Angular-Webanwendung."
+      },
+      "7": {
+        "title": "E-Recruitment-Webanwendung",
+        "description": "Die bei ADDINN entwickelte E-Recruitment-Plattform automatisiert den Rekrutierungsprozess und unterstützt die Vorauswahl von Kandidaten. Die Plattform nutzt JWT für sichere Authentifizierung und optimiert den gesamten Einstellungsprozess."
+      },
+      "8": {
+        "title": "Gesichtserkennung",
+        "description": "Eine Python-Anwendung zur Gesichtserkennung mit OpenCV und der face_recognition-Bibliothek. Erkennt Gesichter über die Webcam und verwendet den FER-2013-Datensatz mit 7.178 Bildern."
+      },
+      "9": {
+        "title": "Grammatikprüfer",
+        "description": "Eine einfache und leichte Webanwendung zur Grammatikprüfung in Englisch, Französisch und Deutsch."
+      },
+      "10": {
+        "title": "ChatBot",
+        "description": "Entwicklung einer mehrsprachigen Full-Stack-Chatbot-Plattform zur Grammatikprüfung auf Englisch, Französisch und Deutsch. Kombiniert React/Next.js-Frontend mit FastAPI-Backend, PostgreSQL-Datenbank und GROQ API/LLMChain-Integration für KI-gestützte Grammatikanalyse in Echtzeit."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Erfolge",
+    "items": {
+      "0": {
+        "title": "Code Her Ways 1.0",
+        "description": "Ich bin stolz, den 3. Platz bei Code Her Ways 1.0 belegt zu haben, einem Problemlösungswettbewerb für Mädchen, der meine Kompetenz und mein Engagement für Programmierexzellenz demonstriert."
+      },
+      "1": {
+        "title": "TCPC Tunesischer Hochschul-Programmierwettbewerb",
+        "description": "Gilt weltweit als einer der ältesten und bedeutendsten Programmierwettbewerbe. Ziel ist es, die Teilnehmer zu stimulieren, optimierte Lösungen in Bezug auf Zeit und Leistung mit minimalen Ressourcen zu finden."
+      },
+      "2": {
+        "title": "SheSolves 5.0",
+        "description": "Ich belegte stolz den 10. Platz beim SheSolves-Programmierwettbewerb, organisiert von INSAT ACM Student Chapter und IEEE WIE INSAT Student Affinity Group."
+      },
+      "3": {
+        "title": "Freeways ISI 1.0",
+        "description": "Ich belegte den 9. Platz bei diesem Programmierwettbewerb und demonstrierte damit meine Kompetenz und mein Engagement."
+      }
+    }
+  },
+  "languages": {
+    "title": "Sprachen",
+    "desc": "Sprachen, in denen ich professionell und persönlich kommuniziere."
+  },
+  "footer": {
+    "rights": "© 2026 Oumeima Limeme. Alle Rechte vorbehalten."
+  }
+}

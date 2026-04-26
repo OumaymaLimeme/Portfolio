@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 const Document = styled.img`
     display: none;
@@ -62,7 +63,6 @@ const Card = styled.div`
     &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
     border: 0.1px solid #4c9ce6;
 `
@@ -86,9 +86,8 @@ const Image = styled.img`
 const Body = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 `
-
 
 const Name = styled.div`
     font-size: 18px;
@@ -117,22 +116,23 @@ const Date = styled.div`
     }
 `
 
-
-
-
 const EducationCard = ({ education }) => {
+    const { t } = useTranslation();
+    const degree = t(`education.items.${education.id}.degree`, { defaultValue: education.degree });
+    const desc = t(`education.items.${education.id}.desc`, { defaultValue: education.desc });
+
     return (
         <Card>
             <Top>
                 <Image src={education.img} />
                 <Body>
                     <Name>{education.school}</Name>
-                    <Degree>{education.degree}</Degree>
+                    <Degree>{degree}</Degree>
                     <Date>{education.date}</Date>
                 </Body>
             </Top>
             <Description>
-                <Span>{education.desc}</Span>
+                <Span>{desc}</Span>
             </Description>
         </Card>
     )

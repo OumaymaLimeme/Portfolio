@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "achievements": "Achievements",
+    "languages": "Languages",
+    "contact": "Contact",
+    "github": "Github",
+    "githubProfile": "Github Profile"
+  },
+  "hero": {
+    "greeting": "Hi, I am",
+    "tagline": "Every Software Engineer is driven by a Vision for the Future",
+    "iam": "I am a",
+    "resume": "Check Resume",
+    "description": "Full-Stack Engineer (2+ years exp) focused on clean architecture and high-impact automation. I transform complex workflows into scalable digital products."
+  },
+  "skills": {
+    "title": "Skills",
+    "desc": "Here are some of my skills on which I have been working on for the past 5 years.",
+    "categories": ["Programming Languages", "Frontend", "Backend", "DevOps & Cloud"]
+  },
+  "experience": {
+    "title": "Experience",
+    "desc": "I have professional experience as a software engineer, having worked on diverse projects across multiple companies.",
+    "items": {
+      "0": {
+        "role": "Front-End Engineer",
+        "desc": "• Led front-end development of an aviation mission operations platform for Advanced Air Mobility (AAM), delivering real-time vertiport monitoring to support safety-critical operational decision-making.\n• Built modular UI components for real-time aviation dashboards while maintaining high reliability under continuous data loads.\n• Delivered interactive geospatial map modules covering vertiports, flight trajectories, and operational zones with live data feeds."
+      },
+      "1": {
+        "role": "Full-Stack Software Engineer",
+        "desc": "• Architected EVIMO from the ground up — an AI-powered maintenance platform for EV charging infrastructure, delivering org management, asset tracking, and user admin across 50+ operational teams.\n• Implemented secure multi-tenant authentication and authorization with role-based access control.\n• Structured backend microservices following Clean Architecture, DDD, and CQRS — reducing code coupling by 40%.\n• Automated API documentation with Swagger/OpenAPI and established CI/CD pipelines via GitHub Actions."
+      },
+      "2": {
+        "role": "Full-Stack Software Engineer",
+        "desc": "• Delivered 4 mission-critical features across Shipzzer's logistics SaaS platform (web & mobile), processing 500+ container operations daily and improving yard management efficiency.\n• Reduced manual support interventions by 40% by shipping self-service platform features, freeing engineering and operations capacity for higher-value work.\n• Refactored the admin management module handling employee presence monitoring and yard role assignment, used daily by 100+ users.\n• Identified and resolved security vulnerabilities across a 60k+ line codebase."
+      },
+      "3": {
+        "role": "Software Engineer Intern",
+        "desc": "• Built and deployed a credit management application on Salesforce, automating 80% of previously manual credit workflows end-to-end.\n• Designed an Experience Cloud portal streamlining the credit application process for employees.\n• Configured 10+ automated workflows and triggers, reducing manual intervention and accelerating approval cycles."
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "desc": "My education has been a journey of self-discovery and growth. My educational details are as follows.",
+    "items": {
+      "0": {
+        "degree": "Engineering Degree in Computer Science",
+        "desc": "Engineering Degree in Computer Science — comprehensive curriculum covering software engineering, distributed systems, algorithms, and system design with hands-on project experience."
+      },
+      "1": {
+        "degree": "Preparatory Cycle — Mathematics & Physics",
+        "desc": "Preparatory cycle in Mathematics & Physics. Ranked top 25% nationally — 464th out of 1,800 candidates in the competitive engineering school entrance exam."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "desc": "I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.",
+    "all": "All",
+    "webApp": "WEB APP'S",
+    "androidApp": "ANDROID APP'S",
+    "machineLearning": "MACHINE LEARNING",
+    "aiProjects": "AI Projects",
+    "viewCode": "View Code",
+    "viewLiveApp": "View Live App",
+    "members": "Members",
+    "items": {
+      "0": {
+        "title": "E-Commerce Platform",
+        "description": "Full-stack e-commerce platform supporting 200+ products for the Tunisian retail market in Canada. Covers product catalog management, shopping cart, secure checkout, and user authentication. Owned the full SDLC — from requirements gathering and UI prototyping to deployment and CI/CD configuration."
+      },
+      "1": {
+        "title": "HEALTHCARE",
+        "description": "Our Project Goal is to create an application that helps run a medical office smoothly. People should be able to book appointments online and manage patient information easily. The idea is to make it user-friendly and upgrade the way medical practices handle their tasks to enhance the overall workflow."
+      },
+      "2": {
+        "title": "Road Network Data Collection Application",
+        "description": "Our Road Network Data Collection Application addresses the growing challenge of managing traffic. Our solution involves gathering and monitoring data from various sources. We use algorithms to analyze this data, identifying traffic patterns, accidents, road closures, and weather information. The app features a user-friendly interface and REST/SOAP web services for data access and visualization."
+      },
+      "3": {
+        "title": "Enicarthage FEE",
+        "description": "Developed a full-stack web application for our university's annual forum that showcases our institution, its activities, and assists administration in efficiently managing event requirements."
+      },
+      "4": {
+        "title": "Classification system for arabic PDF document",
+        "description": "The main goal of the project is to develop a tool capable of recognizing and extracting text from PDF documents written in Arabic using OCR techniques. It can be employed for digitizing and archiving printed Arabic documents due to the automation of text extraction from PDFs."
+      },
+      "5": {
+        "title": "Music Player App",
+        "description": "This desktop application is an all-in-one application that lets you easily find the best music, organize and personalize your favourite musics. Made with Java in MVC Architecture."
+      },
+      "6": {
+        "title": "Pixemantic's Website",
+        "description": "During my internship at Pixemantic as a first-year student at Enicarthage, I was tasked with working on the frontend of their official website. Here, I applied the knowledge and skills I acquired during my training to develop a well-constructed web application using Angular."
+      },
+      "7": {
+        "title": "E-recrutement Web app",
+        "description": "The solution proposed by ADDINN during my internship aimed to automate its recruitment process by creating the 'e-recruitment' platform. This platform played a crucial role in the pre-selection of candidates, streamlining and optimizing the hiring workflow. The platform implemented JSON Web Tokens (JWT) for secure authentication."
+      },
+      "8": {
+        "title": "Face Recognition",
+        "description": "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces via the webcam. The dataset used is FER 2013 composed of 7178 images."
+      },
+      "9": {
+        "title": "Grammar Checker",
+        "description": "A simple and lightweight web application that helps users check grammar in English, French, and German."
+      },
+      "10": {
+        "title": "ChatBot",
+        "description": "Designed and built a full-stack multilingual chatbot platform that provides grammar checking in English, French, and German. Combines a React and Next.js frontend with a FastAPI backend, PostgreSQL database, and GROQ API/LLMChain integration for real-time AI-powered grammar analysis."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Achievements",
+    "items": {
+      "0": {
+        "title": "Code Her Ways 1.0",
+        "description": "I am honored to have clinched the 3rd place in Code Her Ways 1.0, a Problem Solving competition for girls, demonstrating my proficiency and commitment to coding excellence."
+      },
+      "1": {
+        "title": "TCPC Tunisian Collegiate Programming Contest",
+        "description": "Considered globally as the oldest and most important computer programming competition. The idea behind this great challenge is to stimulate the reasoning of participants to find solutions optimized in terms of time and performance using the least resources."
+      },
+      "2": {
+        "title": "SheSolves 5.0",
+        "description": "I proudly secured the 10th place in the SheSolves coding competition, organized by INSAT ACM Student Chapter and IEEE WIE INSAT Student Affinity Group, showcasing my skills and dedication."
+      },
+      "3": {
+        "title": "Freeways ISI 1.0",
+        "description": "I achieved the 9th position in this coding competition, underscoring my competence and commitment during the event."
+      }
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "desc": "Human languages I communicate in professionally and personally."
+  },
+  "footer": {
+    "rights": "© 2026 Oumeima Limeme. All rights reserved."
+  }
+}
