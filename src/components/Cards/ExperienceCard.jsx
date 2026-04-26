@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaMapMarkerAlt } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next'
 
 const Document = styled.img`
     display: none;
@@ -64,7 +65,6 @@ const Card = styled.div`
     &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
 
     border: 0.1px solid #309ee8;
@@ -90,9 +90,8 @@ const Image = styled.img`
 const Body = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 `
-
 
 const Role = styled.div`
     font-size: 18px;
@@ -134,7 +133,6 @@ const Location = styled.div`
     }
 `
 
-
 const Skills = styled.div`
     width: 100%;
     display: flex;
@@ -162,15 +160,17 @@ const Skill = styled.div`
     }
 `
 
-
-
 const ExperienceCard = ({ experience }) => {
+    const { t } = useTranslation();
+    const role = t(`experience.items.${experience.id}.role`, { defaultValue: experience.role });
+    const desc = t(`experience.items.${experience.id}.desc`, { defaultValue: experience.desc });
+
     return (
         <Card>
             <Top>
                 <Image src={experience.img} />
                 <Body>
-                    <Role>{experience.role}</Role>
+                    <Role>{role}</Role>
                     <Company>{experience.company}</Company>
                     <Date>{experience.date}</Date>
                     {experience.location && (
@@ -182,10 +182,7 @@ const ExperienceCard = ({ experience }) => {
                 </Body>
             </Top>
             <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
-
-                }
+                {desc && <Span>{desc}</Span>}
                 {experience?.skills &&
                     <>
                         <br />

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { useTranslation } from 'react-i18next'
 
 const Button = styled.button`
     display: none;
@@ -94,7 +94,6 @@ const Date = styled.div`
     }
 `
 
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -122,26 +121,29 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({ project, setOpenModal }) => {
+    const { t } = useTranslation();
+    const title = t(`projects.items.${project.id}.title`, { defaultValue: project.title });
+    const description = t(`projects.items.${project.id}.description`, { defaultValue: project.description });
+
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+        <Card onClick={() => setOpenModal({ state: true, project: project })}>
+            <Image src={project.image} />
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
-                <Title>{project.title}</Title>
+                <Title>{title}</Title>
                 <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
+                <Description>{description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img} />
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
         </Card>
     )
 }

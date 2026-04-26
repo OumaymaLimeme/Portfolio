@@ -1,10 +1,11 @@
-import styled from 'styled-components';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import styled from "styled-components";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import { useTranslation } from "react-i18next";
 
-import { Bio } from '../../data/constants';
+import { Bio } from "../../data/constants";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -13,7 +14,6 @@ const FooterContainer = styled.div`
   justify-content: center;
   //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
 `;
-
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -50,7 +50,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
@@ -74,7 +74,7 @@ const SocialMediaIcon = styled.a`
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
   &:hover {
-    color:hsla(213, 84%, 58%, 0.884);
+    color: hsla(213, 84%, 58%, 0.884);
   }
 `;
 
@@ -86,7 +86,7 @@ const Copyright = styled.p`
 `;
 
 const Num = styled.a`
-color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s ease-in-out;
@@ -99,35 +99,42 @@ color: ${({ theme }) => theme.text_primary};
 `;
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <FooterContainer>
       <FooterWrapper>
         <Logo>Oumeima Limeme</Logo>
         <Num> (+216) 54886508</Num>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
-          <NavLink href="#acheivements">Acheivements</NavLink>
-          <NavLink href="#languages">Languages</NavLink>
+          <NavLink href="#about">{t("nav.about")}</NavLink>
+          <NavLink href="#skills">{t("nav.skills")}</NavLink>
+          <NavLink href="#experience">{t("nav.experience")}</NavLink>
+          <NavLink href="#projects">{t("nav.projects")}</NavLink>
+          <NavLink href="#education">{t("nav.education")}</NavLink>
+          <NavLink href="#acheivements">{t("nav.achievements")}</NavLink>
+          <NavLink href="#languages">{t("nav.languages")}</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.github} target="display"><GitHubIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.facebook} target="display">
+            <FacebookIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display">
+            <LinkedInIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display">
+            <GitHubIcon />
+          </SocialMediaIcon>
           <SocialMediaIcon>
-              <a href={`mailto:${Bio.email}`} rel="noopener noreferrer" style={{ color: 'white' }}>
+            <a
+              href={`mailto:${Bio.email}`}
+              rel="noopener noreferrer"
+              style={{ color: "white" }}
+            >
               <AlternateEmailIcon />
-              </a>
-</SocialMediaIcon>
-
+            </a>
+          </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>
-          &copy; 2026 Oumeima Limeme. All rights reserved.
-        </Copyright>
-
+        <Copyright>{t("footer.rights")}</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
