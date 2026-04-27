@@ -41,7 +41,7 @@
       },
       "3": {
         "role": "Softwareentwicklerin (Praktikum)",
-        "desc": "• Entwickelte und deployte eine Kreditverwaltungsanwendung auf Salesforce und automatisierte 80 % der manuellen Kreditprozesse.\n• Gestaltete ein Experience Cloud Portal zur Vereinfachung des Kreditantragsprozesses für Mitarbeitende.\n• Konfigurierte 10+ automatisierte Workflows und Trigger, reduzierte manuelle Eingriffe und beschleunigte Genehmigungszyklen."
+        "desc": "• Entwickelte eine Full-Stack-Kreditverwaltungsanwendung, die Mitarbeitenden ermöglicht, Kreditanträge einzureichen, zu verfolgen und zu verwalten – und rund 80 % der zuvor manuellen Aufgaben automatisierte.\n• Gestaltete ein Self-Service-Portal als zentralen Einstiegspunkt für Mitarbeitende und ersetzte damit einen fragmentierten, mehrstufigen manuellen Prozess.\n• Sicherte die Anwendung mit JWT-basierter Authentifizierung und rollenbasierter Zugriffskontrolle ab, sodass nur autorisierte Mitarbeitende Kreditanträge einsehen und bearbeiten können."
       }
     }
   },

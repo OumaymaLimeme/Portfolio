@@ -279,18 +279,23 @@ export const experiences = [
     img: require("../images/achiv/talan.png"),
     role: "Software Engineer Intern",
     company: "Talan Tunisie",
-    location: "Tunisia · On-site",
+    location: "Tunis, Tunisia",
     date: "Feb 2024 – Jun 2024",
     desc:
-      "• Built and deployed a credit management application on Salesforce, automating 80% of previously manual credit workflows end-to-end.\n" +
-      "• Designed an Experience Cloud portal streamlining the credit application process for employees.\n" +
-      "• Configured 10+ automated workflows and triggers, reducing manual intervention and accelerating approval cycles.",
+      "• Built full-stack credit management application, enabling employees to submit, track, and manage credit workflows end-to-end and automating around 80% of previously manual tasks.\n" +
+      "• Designed self-service portal giving employees a single entry point, replacing a fragmented multi-step manual process.\n" +
+      "• Secured application with JWT-based authentication and role-based access control, ensuring only authorized employees could access and action credit requests.",
     skills: [
-      "Apex",
-      "SOQL",
-      "Lightning Web Components",
-      "Flows",
-      "Salesforce Community Cloud",
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "SQLAlchemy",
+      "PostgreSQL",
+      "JWT",
+      "REST APIs",
+      "Git",
+      "GitHub",
     ],
   },
 ];
