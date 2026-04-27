@@ -1,38 +1,31 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Container, Wrapper, Title, CardContainer } from "./ProjectsStyle";
-import ProjectCard from "../Cards/ProjectCards";
+import AchievementCard from "../Cards/AchievementCard";
+import AchievementDetails from "../AchievementDetails";
 import { acheivements } from "../../data/constants";
 import { useTranslation } from "react-i18next";
 
-const Acheivements = ({ openModal, setOpenModal }) => {
+const Acheivements = () => {
   const { t } = useTranslation();
-  // eslint-disable-next-line
-  const [toggle, setToggle] = useState("all");
+  const [openModal, setOpenModal] = useState({ state: false, achievement: null });
+
   return (
     <Container id="acheivements">
       <Wrapper>
         <Title>{t("achievements.title")}</Title>
         <CardContainer>
-          {toggle === "all" &&
-            acheivements.map((project) => (
-              <ProjectCard
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
-          {acheivements
-            .filter((item) => item.category === toggle)
-            .map((project) => (
-              <ProjectCard
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
+          {acheivements.map((achievement) => (
+            <AchievementCard
+              key={achievement.id}
+              achievement={achievement}
+              setOpenModal={setOpenModal}
+            />
+          ))}
         </CardContainer>
       </Wrapper>
+      {openModal.state && (
+        <AchievementDetails openModal={openModal} setOpenModal={setOpenModal} />
+      )}
     </Container>
   );
 };
