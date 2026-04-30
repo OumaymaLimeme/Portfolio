@@ -231,7 +231,7 @@ export const experiences = [
     img: require("../images/achiv/evimo.png"),
     role: "Full-Stack Software Engineer",
     company: "EVIMO",
-    location: "Tunisia · Remote",
+    location: "France · Remote",
     date: "Nov 2025 – Jan 2026",
     desc:
       "• Architected EVIMO from the ground up — an AI-powered maintenance platform for EV charging infrastructure, delivering org management, asset tracking, and user admin across 50+ operational teams.\n" +
