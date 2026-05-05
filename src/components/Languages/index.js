@@ -137,16 +137,12 @@ const Languages = () => {
     <Container id="languages">
       <Wrapper>
         <Title>{t("languages.title")}</Title>
-        <Desc>{t("languages.desc")}</Desc>
         <LanguagesGrid>
           {languages.map((lang, index) => (
             <LanguageCard key={index}>
               <Flag>{lang.flag}</Flag>
               <LangName>{lang.name}</LangName>
               <LevelBadge>{lang.proficiency}</LevelBadge>
-              <ProgressBar>
-                <ProgressFill level={lang.level} />
-              </ProgressBar>
             </LanguageCard>
           ))}
         </LanguagesGrid>

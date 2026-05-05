@@ -28,8 +28,8 @@
     "desc": "Ich verfüge über Berufserfahrung als Softwareentwicklerin und habe an vielfältigen Projekten in verschiedenen Unternehmen gearbeitet.",
     "items": {
       "0": {
-        "role": "Front-End-Entwicklerin",
-        "desc": "• Leitete die Frontend-Entwicklung einer Luftfahrt-Operationsplattform für Advanced Air Mobility (AAM) und lieferte Echtzeit-Vertiport-Monitoring zur Unterstützung sicherheitskritischer operativer Entscheidungsfindung.\n• Entwickelte modulare UI-Komponenten für Echtzeit-Luftfahrt-Dashboards unter Gewährleistung hoher Zuverlässigkeit bei kontinuierlichen Datenlasten.\n• Lieferte interaktive geospatiale Kartenmodule für Vertiports, Flugtrajektorien und Betriebszonen mit Live-Datenfeeds."
+        "role": "Full-Stack-Entwicklerin",
+        "desc": "• Leitet die Frontend-Entwicklung der Luftfahrt-Operationsplattform für Advanced Air Mobility (AAM), einem System, bei dem Echtzeit-Vertiport-Monitoring sicherheitskritische Flugentscheidungen direkt unterstützt.\n• Lieferte interaktive geospatiale Kartenmodule für Vertiports, Flugtrajektorien und Betriebszonen.\n• Entwickelte das NOVA Admin Panel, eine interne Multi-Tenant-Verwaltungsplattform, die Unisphere ermöglicht, Organisationen und Nutzer im Advanced Air Mobility Ökosystem zu verwalten (Erstellung, Aktualisierung, Kontingentsteuerung, Abonnements)."
       },
       "1": {
         "role": "Full-Stack-Softwareentwicklerin",

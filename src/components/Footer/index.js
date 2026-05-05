@@ -103,8 +103,6 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Oumeima Limeme</Logo>
-        <Num> (+216) 54886508</Num>
         <Nav>
           <NavLink href="#about">{t("nav.about")}</NavLink>
           <NavLink href="#skills">{t("nav.skills")}</NavLink>

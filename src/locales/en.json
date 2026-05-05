@@ -28,8 +28,8 @@
     "desc": "I have professional experience as a software engineer, having worked on diverse projects across multiple companies.",
     "items": {
       "0": {
-        "role": "Front-End Engineer",
-        "desc": "• Led front-end development of an aviation mission operations platform for Advanced Air Mobility (AAM), delivering real-time vertiport monitoring to support safety-critical operational decision-making.\n• Built modular UI components for real-time aviation dashboards while maintaining high reliability under continuous data loads.\n• Delivered interactive geospatial map modules covering vertiports, flight trajectories, and operational zones with live data feeds."
+        "role": "Full-Stack Engineer",
+        "desc": "• Lead front-end development of the aviation mission operations platform for Advanced Air Mobility (AAM), a system where real-time vertiport monitoring directly supports safety-critical flight decisions.\n• Shipped interactive geospatial map modules covering vertiports, flight trajectories, and operational zones.\n• Developed NOVA Admin Panel, an internal multi-tenant management platform enabling Unisphere to oversee and manage (create, update, quota control, subscriptions) organizations and users across the Advanced Air Mobility ecosystem."
       },
       "1": {
         "role": "Full-Stack Software Engineer",
@@ -139,8 +139,7 @@
     }
   },
   "languages": {
-    "title": "Languages",
-    "desc": "Human languages I communicate in professionally and personally."
+    "title": "Languages"
   },
   "footer": {
     "rights": "© 2026 Oumeima Limeme. All rights reserved."
