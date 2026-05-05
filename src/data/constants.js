@@ -8,7 +8,7 @@ export const Bio = {
   resume: require("../images/Oumeima_limeme_CV.pdf"),
   linkedin: "https://www.linkedin.com/in/oumaymalimeme/",
   leetcode: "https://leetcode.com/Oumayma23/",
-  facebook: "https://www.facebook.com/oumayma2000limeme",
+  phone: "+49 15129888262",
   email: "oumeimalimeme@gmail.com",
 };
 
@@ -185,15 +185,15 @@ export const languages = [
   },
   {
     name: "French",
-    proficiency: "Elementary · B1",
+    proficiency: "Professional · B2",
     flag: "🇫🇷",
-    level: 55,
+    level: 75,
   },
   {
     name: "English",
-    proficiency: "Professional · B2",
+    proficiency: "Advanced · C1",
     flag: "🇬🇧",
-    level: 82,
+    level: 90,
   },
   {
     name: "German",
@@ -207,19 +207,21 @@ export const experiences = [
   {
     id: 0,
     img: require("../images/achiv/Unisphere.webp"),
-    role: "Front-End Engineer",
+    role: "Full-Stack Engineer",
     company: "Unisphere GmbH",
-    location: "Germany · On-site",
+    location: "Konstanz, Germany · On-site",
     date: "Jan 2026 – Present",
     desc:
-      "• Led front-end development of an aviation mission operations platform for Advanced Air Mobility (AAM), delivering real-time vertiport monitoring to support safety-critical operational decision-making.\n" +
-      "• Built modular UI components for real-time aviation dashboards while maintaining high reliability under continuous data loads.\n" +
-      "• Delivered interactive geospatial map modules covering vertiports, flight trajectories, and operational zones with live data feeds.",
+      "• Lead front-end development of the aviation mission operations platform for Advanced Air Mobility (AAM), a system where real-time vertiport monitoring directly supports safety-critical flight decisions.\n" +
+      "• Shipped interactive geospatial map modules covering vertiports, flight trajectories, and operational zones.\n" +
+      "• Developed NOVA Admin Panel, an internal multi-tenant management platform enabling Unisphere to oversee and manage (create, update, quota control, subscriptions) organizations and users across the Advanced Air Mobility ecosystem.",
     skills: [
       "Vue.js",
       "Pinia",
       "TypeScript",
       "JavaScript",
+      "Python",
+      "FastAPI",
       "AWS",
       "REST APIs",
       "CI/CD",
@@ -242,7 +244,6 @@ export const experiences = [
       "React",
       "Next.js",
       "NestJS",
-      "Prisma",
       "PostgreSQL",
       "Docker",
       "DDD",
@@ -338,7 +339,6 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/OumaymaLimeme",
-    webapp: "https://github.com/OumaymaLimeme",
   },
   {
     id: 1,
@@ -347,16 +347,6 @@ export const projects = [
     description:
       "Our Project Goal is to create an application that helps run a medical office smoothly. People should be able to book appointments online and manage patient information easily. The idea is to make it user-friendly and upgrade the way medical practices handle their tasks to enhance the overall workflow.",
     image: require("../images/projects/pp1.png"),
-    images: [
-      {
-        imgPath:
-          "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-      },
-      {
-        imgPath:
-          "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-      },
-    ],
     tags: ["Angular", "Node Js", "Express Js", "MongoDB", "Restful API", "UML"],
     category: "web app",
     github: "https://github.com/OumaymaLimeme/Cabinet_Management",
@@ -447,7 +437,7 @@ export const projects = [
       "This desktop application is an all-in-one application that lets you easily find the best music, organize and personalize your favourite musics. Made with Java in MVC Architecture.",
     image: require("../images/projects/p5.png"),
     tags: ["Java", "JavaFX", "MVC", "MySQL"],
-    category: "android app",
+    category: "desktop app",
     github: "https://github.com/OumaymaLimeme/Music_Player",
     webapp: "https://github.com/OumaymaLimeme/Music_Player",
     member: [
@@ -616,9 +606,9 @@ export const acheivements = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2019, text: "Started engineering preparatory cycle at ESSTHS" },
+  { year: 2021, text: "First internship — built Angular app at Pixemantic" },
+  { year: 2022, text: "Competed in TCPC & multiple coding competitions" },
+  { year: 2024, text: "Graduated from ENICarthage & joined Shipzzer" },
+  { year: 2025, text: "Joined EVIMO, then relocated to Germany at Unisphere" },
 ];
