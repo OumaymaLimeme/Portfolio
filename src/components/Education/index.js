@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SectionLabel from "../SectionLabel";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -38,37 +39,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  &::after {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: linear-gradient(90deg, #00c9ff, #0077b6);
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-`;
 
 const TimelineSection = styled.div`
   width: 100%;
@@ -89,8 +59,11 @@ const Education = () => {
   return (
     <Container id="education">
       <Wrapper>
-        <Title>{t("education.title")}</Title>
-        <Desc>{t("education.desc")}</Desc>
+        <SectionLabel
+          number="04"
+          title={t("education.title")}
+          desc={t("education.desc")}
+        />
         <TimelineSection>
           <Timeline>
             {education.map((education, index) => (

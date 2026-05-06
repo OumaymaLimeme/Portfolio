@@ -4,23 +4,33 @@ import {
   HeroContainer,
   HeroBg,
   HeroLeftContainer,
-  Img,
   HeroRightContainer,
   HeroInnerContainer,
   TextLoop,
-  Title,
-  Tagline,
   Span,
   SubTitle,
   ResumeButton,
+  PhotoContainer,
+  Img,
+  ScrollCTAWrapper,
+  ScrollLabel,
+  ScrollArrow,
 } from "./HeroStyle";
 import HeroImg from "../../images/oumeima.jpeg";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
 import { useTranslation } from "react-i18next";
+import TerminalWindow from "./TerminalWindow";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const terminalLines = t("terminal.lines", { returnObjects: true });
+
+  const scrollToSkills = () => {
+    const el = document.getElementById("skills");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div id="about">
       <HeroContainer>
@@ -29,10 +39,10 @@ const HeroSection = () => {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
-            <Title>
-              {t("hero.greeting")} <br /> {Bio.name}
-            </Title>
-            <Tagline>{t("hero.tagline")}</Tagline>
+            <TerminalWindow
+              lines={Array.isArray(terminalLines) ? terminalLines : []}
+              title={t("terminal.title")}
+            />
             <TextLoop>
               {t("hero.iam")}
               <Span>
@@ -52,9 +62,16 @@ const HeroSection = () => {
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={HeroImg} alt="hero-image" />
+            <PhotoContainer>
+              <Img src={HeroImg} alt="hero-image" />
+            </PhotoContainer>
           </HeroRightContainer>
         </HeroInnerContainer>
+
+        <ScrollCTAWrapper onClick={scrollToSkills}>
+          <ScrollLabel>{t("hero.scrollCta")}</ScrollLabel>
+          <ScrollArrow />
+        </ScrollCTAWrapper>
       </HeroContainer>
     </div>
   );

@@ -14,6 +14,8 @@ import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 import Acheivements from "./components/Acheivements/index.js";
 import Languages from "./components/Languages";
+import CursorGlow from "./components/CursorGlow";
+import ScrollProgress from "./components/ScrollProgress";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -26,6 +28,16 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
+const GrainOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+`
 function App() {
   // eslint-disable-next-line no-unused-vars
   const [darkMode, setDarkMode] = useState(true);
@@ -34,6 +46,9 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
+        <CursorGlow />
+        <GrainOverlay />
+        <ScrollProgress />
         <Navbar />
         <Body>
           <HeroSection />

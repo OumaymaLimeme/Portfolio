@@ -1,6 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 // eslint-disable-next-line no-unused-vars
 import _default from "../../themes/default";
+
+const bounce = keyframes`
+  0%, 100% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(7px) rotate(45deg); }
+`;
+
+const gradientShift = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
+
+const fadeInUp = keyframes`
+  from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+`;
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -11,7 +27,7 @@ export const HeroContainer = styled.div`
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
-  @media (max-width: 640) {
+  @media (max-width: 640px) {
     padding: 32px 16px;
   }
   z-index: 1;
@@ -93,30 +109,89 @@ export const HeroRightContainer = styled.div`
   }
 `;
 
+export const PhotoContainer = styled.div`
+  position: relative;
+  display: inline-flex;
+  /* offset accent frame visible at bottom-right */
+  margin-right: 14px;
+  margin-bottom: 14px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 14px -14px -14px 14px;
+    border: 2px solid rgba(0, 201, 255, 0.35);
+    border-radius: 20px;
+    z-index: 0;
+    transition: border-color 0.3s ease;
+  }
+
+  &:hover::after {
+    border-color: rgba(0, 201, 255, 0.6);
+  }
+`;
+
 export const Img = styled.img`
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 90%;
   max-width: 300px;
   max-height: 360px;
   border-radius: 16px;
   object-fit: cover;
-  border: 2px solid rgba(0, 201, 255, 0.25);
-  box-shadow: 0 0 40px rgba(0, 201, 255, 0.18), 0 20px 60px rgba(0, 0, 0, 0.45);
+  border: 2px solid rgba(0, 201, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 60px rgba(0, 201, 255, 0.35), 0 24px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 201, 255, 0.12);
   }
   @media (max-width: 768px) {
-    max-width: 380px;
-    max-height: 380px;
+    max-width: 300px;
+    max-height: 360px;
   }
 
   @media (max-width: 640px) {
-    max-width: 260px;
-    max-height: 260px;
+    max-width: 240px;
+    max-height: 280px;
   }
+`;
+
+export const ScrollCTAWrapper = styled.div`
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  animation: ${fadeInUp} 0.8s ease 4.5s both;
+
+  @media (max-width: 640px) {
+    bottom: 12px;
+  }
+`;
+
+export const ScrollLabel = styled.span`
+  font-size: 11px;
+  color: ${({ theme }) => theme.text_secondary};
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  white-space: nowrap;
+`;
+
+export const ScrollArrow = styled.div`
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid ${({ theme }) => theme.primary};
+  border-bottom: 2px solid ${({ theme }) => theme.primary};
+  transform: rotate(45deg);
+  animation: ${bounce} 1.5s ease-in-out infinite;
+  opacity: 0.7;
 `;
 
 export const Title = styled.div`
@@ -174,7 +249,12 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: #00C9FF;
+  background: linear-gradient(270deg, #00C9FF, #92EFFD, #0077B6, #00C9FF);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: ${gradientShift} 4s ease infinite;
   cursor: pointer;
 `;
 

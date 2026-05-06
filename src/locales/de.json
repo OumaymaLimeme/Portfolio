@@ -11,11 +11,18 @@
     "github": "Github",
     "githubProfile": "Github Profil"
   },
+  "terminal": {
+    "title": "oumeima@portfolio: ~",
+    "lines": [
+      { "cmd": "whoami", "out": "Oumeima Limeme — Full-Stack-Entwicklerin" },
+      { "cmd": "cat leidenschaft.txt", "out": "Ich schreibe nicht nur Code. Ich liefere Produkte." },
+      { "cmd": "./impact --stats", "out": "2+ Jahre · 12 Projekte · 0 Ausreden" }
+    ]
+  },
   "hero": {
-    "greeting": "Hallo, ich bin",
-    "tagline": "Jeder Softwareingenieur wird von einer Vision für die Zukunft angetrieben",
     "iam": "Ich bin",
     "resume": "Lebenslauf ansehen",
+    "scrollCta": "sieh meine Arbeit",
     "description": "Full-Stack-Entwicklerin (2+ Jahre Erfahrung) mit Fokus auf saubere Architektur und wirkungsstarke Automatisierung. Ich verwandle komplexe Workflows in skalierbare digitale Produkte."
   },
   "skills": {

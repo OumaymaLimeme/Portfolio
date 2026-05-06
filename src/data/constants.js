@@ -1,7 +1,12 @@
 import bigqueryIcon from "../images/devops/bigquery.svg";
 export const Bio = {
   name: "Oumeima Limeme",
-  roles: ["Full-Stack Engineer"],
+  roles: [
+    "the one who fixes it on Friday night",
+    "your next hire",
+    "building what others say is too complex",
+    "a Full-Stack Engineer",
+  ],
   description:
     "Full-Stack Engineer with 2+ years of experience shipping web and mobile products. I am driven by a passion for clean code, automated workflows, and building scalable applications using modern technologies. My goal is always to deliver measurable impact — from reducing technical debt and manual interventions to automating complex operational tasks.",
   github: "https://github.com/OumaymaLimeme",
@@ -19,7 +24,7 @@ export const skills = [
       {
         name: "JavaScript",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       },
       {
         name: "TypeScript",
@@ -61,7 +66,7 @@ export const skills = [
       {
         name: "Vue.js",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg",
       },
       {
         name: "Pinia",
@@ -342,7 +347,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "HEALTHCARE",
+    title: "Medical Office Platform",
     date: "Jan 2023 - March 2023",
     description:
       "Our Project Goal is to create an application that helps run a medical office smoothly. People should be able to book appointments online and manage patient information easily. The idea is to make it user-friendly and upgrade the way medical practices handle their tasks to enhance the overall workflow.",
@@ -362,7 +367,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Road Network Data Collection Application",
+    title: "Traffic Intelligence Platform",
     date: "Jun 2023 - Jul 2023",
     description:
       "Our Road Network Data Collection Application addresses the growing challenge of managing traffic, which affects people's daily lives. Issues like traffic jams and accidents disrupt roads and cause inconvenience. Our solution involves gathering and monitoring data from various sources. We use algorithms to analyze this data, identifying traffic patterns, accidents, road closures, and weather information. The app features a user-friendly interface, designed for an easy and intuitive experience. Additionally, we've created REST/SOAP web services, allowing users to access, collect, and visualize data based on their queries or requests, providing a more efficient and tailored experience.",
@@ -384,7 +389,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Enicarthage FEE",
+    title: "University Forum Platform",
     date: "Apr 2023 - May 2023",
     description:
       "Developed a full-stack web application for our university's annual forum that showcases our institution, its activities, and assists administration in efficiently managing event requirements.",
@@ -404,7 +409,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Classification system for arabic PDF document",
+    title: "Arabic PDF OCR & Classifier",
     date: "Jan 2023 - Mar 2023",
     description:
       "The main goal of the project is to develop a tool capable of recognizing and extracting text from PDF documents written in Arabic using OCR techniques. It can be employed for digitizing and archiving printed Arabic documents  due to the automation of text extraction from PDFs that simplifies the digitization process.",
@@ -450,7 +455,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Pixemantic's Website",
+    title: "Pixemantic — Corporate Website",
     date: "Jul 2021",
     description:
       "During my internship at Pixemantic as a first-year student at Enicarthage, I was tasked with working on the frontend of their official website. Here, I applied the knowledge and skills I acquired during my training to develop a well-constructed web application using Angular.",
@@ -462,7 +467,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "E-recrutement Web app",
+    title: "E-Recruitment Platform",
     date: "Jun 2021",
     description:
       "The solution proposed by ADDINN during my internship aimed to automate its recruitment process by creating the 'e-recruitment' platform. This platform played a crucial role in the pre-selection of candidates, streamlining and optimizing the hiring workflow. As an additional security measure and to facilitate secure user authentication and authorization processes, the platform implemented JSON Web Tokens (JWT). JWT technology allowed for the secure generation and exchange of tokens, enhancing the overall integrity and confidentiality of the recruitment platform. This not only automated and expedited the recruitment procedures but also ensured that sensitive candidate data and interactions were handled with robust security protocols.",
@@ -511,7 +516,7 @@ export const projects = [
   },*/
   {
     id: 8,
-    title: "Face Recognition",
+    title: "Real-Time Face & Emotion Recognition",
     date: "Jan 2023",
     description:
       "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. he dataset used will be FER 2013 composed of 7178 images.",

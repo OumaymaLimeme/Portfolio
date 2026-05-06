@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 10px 0px 100px 0;
+    padding: 10px 16px 100px;
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
@@ -61,6 +61,7 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
     display: flex;
+    flex-wrap: wrap;
     border: 1.5px solid  hsla(213, 84%, 58%, 0.884);
     color:  hsla(213, 84%, 58%, 0.884);
     font-size: 16px;
@@ -69,6 +70,11 @@ export const ToggleButtonGroup = styled.div`
     margin: 22px 0px;
     @media (max-width: 768px) {
         font-size: 12px;
+    }
+    @media (max-width: 480px) {
+        font-size: 11px;
+        width: 100%;
+        justify-content: center;
     }
 `
 
@@ -101,14 +107,8 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 28px;
     flex-wrap: wrap;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // grid-gap: 32px;
-    // grid-auto-rows: minmax(100px, auto);
-    // @media (max-width: 960px) {
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @media (max-width: 640px) {
-    //     grid-template-columns: repeat(1, 1fr);
-    // }
+    @media (max-width: 480px) {
+        padding: 0 16px;
+        gap: 20px;
+    }
 `;

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { languages } from "../../data/constants";
 import { useTranslation } from "react-i18next";
+import SectionLabel from "../SectionLabel";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const Container = styled.div`
   display: flex;
@@ -28,36 +30,6 @@ const Wrapper = styled.div`
   padding: 0 16px;
 `;
 
-const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  &::after {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: linear-gradient(90deg, #00c9ff, #0077b6);
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
 
 const LanguagesGrid = styled.div`
   display: flex;
@@ -125,24 +97,28 @@ const ProgressBar = styled.div`
 
 const ProgressFill = styled.div`
   height: 100%;
-  width: ${({ level }) => level}%;
+  width: ${({ $visible, level }) => ($visible ? `${level}%` : "0%")};
   background: linear-gradient(90deg, #00c9ff, #0077b6);
   border-radius: 4px;
-  transition: width 0.6s ease;
+  transition: width 0.9s ease ${({ $delay }) => $delay || 0}s;
 `;
 
 const Languages = () => {
   const { t } = useTranslation();
+  const [gridRef, visible] = useScrollReveal();
   return (
     <Container id="languages">
       <Wrapper>
-        <Title>{t("languages.title")}</Title>
-        <LanguagesGrid>
+        <SectionLabel number="06" title={t("languages.title")} />
+        <LanguagesGrid ref={gridRef}>
           {languages.map((lang, index) => (
             <LanguageCard key={index}>
               <Flag>{lang.flag}</Flag>
               <LangName>{lang.name}</LangName>
               <LevelBadge>{lang.proficiency}</LevelBadge>
+              <ProgressBar>
+                <ProgressFill level={lang.level} $visible={visible} $delay={index * 0.15} />
+              </ProgressBar>
             </LanguageCard>
           ))}
         </LanguagesGrid>

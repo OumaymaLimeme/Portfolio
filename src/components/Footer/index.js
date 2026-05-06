@@ -26,11 +26,6 @@ const FooterWrapper = styled.footer`
   color: ${({ theme }) => theme.text_primary};
 `;
 
-const Logo = styled.h1`
-  font-weight: 600;
-  font-size: 20px;
-  color: hsla(213, 84%, 58%, 0.884);
-`;
 
 const Nav = styled.nav`
   width: 100%;
@@ -78,6 +73,46 @@ const SocialMediaIcon = styled.a`
   }
 `;
 
+const CTA = styled.div`
+  text-align: center;
+  margin-bottom: 0.5rem;
+`;
+
+const CTAHeadline = styled.h2`
+  font-size: 28px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.text_primary};
+  margin: 0 0 6px;
+  line-height: 1.2;
+
+  @media (max-width: 640px) {
+    font-size: 22px;
+  }
+`;
+
+const CTAAccent = styled.span`
+  color: ${({ theme }) => theme.primary};
+`;
+
+const CTAEmail = styled.a`
+  font-size: 15px;
+  color: ${({ theme }) => theme.text_secondary};
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+
+const Divider = styled.hr`
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-top: 1px solid rgba(0, 201, 255, 0.12);
+  margin: 0.5rem 0;
+`;
+
 const Copyright = styled.p`
   margin-top: 1.5rem;
   font-size: 0.9rem;
@@ -85,24 +120,19 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
-const Num = styled.a`
-  color: ${({ theme }) => theme.text_primary};
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: hsla(213, 84%, 58%, 0.884);
-  }
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
 
 function Footer() {
   const { t } = useTranslation();
   return (
     <FooterContainer>
       <FooterWrapper>
+        <CTA>
+          <CTAHeadline>
+            Let's <CTAAccent>build</CTAAccent> something great.
+          </CTAHeadline>
+          <CTAEmail href={`mailto:${Bio.email}`}>{Bio.email}</CTAEmail>
+        </CTA>
+        <Divider />
         <Nav>
           <NavLink href="#about">{t("nav.about")}</NavLink>
           <NavLink href="#skills">{t("nav.skills")}</NavLink>

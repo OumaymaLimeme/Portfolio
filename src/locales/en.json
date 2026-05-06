@@ -11,61 +11,68 @@
     "github": "Github",
     "githubProfile": "Github Profile"
   },
+  "terminal": {
+    "title": "oumeima@portfolio: ~",
+    "lines": [
+      { "cmd": "whoami", "out": "Oumeima Limeme — Full-Stack Engineer" },
+      { "cmd": "cat passion.txt", "out": "I don't just write code. I ship products." },
+      { "cmd": "./impact --stats", "out": "2+ years · 4 companies · 0 excuses" }
+    ]
+  },
   "hero": {
-    "greeting": "Hi, I am",
-    "tagline": "Every Software Engineer is driven by a Vision for the Future",
-    "iam": "I am a",
-    "resume": "Check Resume",
-    "description": "Full-Stack Engineer (2+ years exp) focused on clean architecture and high-impact automation. I transform complex workflows into scalable digital products."
+    "iam": "I am",
+    "resume": "View Resume",
+    "scrollCta": "see what I've built",
+    "description": "Full-Stack Engineer with 2+ years shipping production software across Germany, France, and Tunisia. I build scalable systems, automate the boring parts, and obsess over impact."
   },
   "skills": {
-    "title": "Skills",
-    "desc": "Here are some of my skills on which I have been working on for the past 5 years.",
+    "title": "Tech Stack",
+    "desc": "Technologies I've shipped production code with — across web, mobile, backend, and cloud.",
     "categories": ["Programming Languages", "Frontend", "Backend", "DevOps & Cloud"]
   },
   "experience": {
     "title": "Experience",
-    "desc": "I have professional experience as a software engineer, having worked on diverse projects across multiple companies.",
+    "desc": "2+ years building and shipping production software across startups and tech companies in Germany, France, and Tunisia.",
     "items": {
       "0": {
         "role": "Full-Stack Engineer",
-        "desc": "• Lead front-end development of the aviation mission operations platform for Advanced Air Mobility (AAM), a system where real-time vertiport monitoring directly supports safety-critical flight decisions.\n• Shipped interactive geospatial map modules covering vertiports, flight trajectories, and operational zones.\n• Developed NOVA Admin Panel, an internal multi-tenant management platform enabling Unisphere to oversee and manage (create, update, quota control, subscriptions) organizations and users across the Advanced Air Mobility ecosystem."
+        "desc": "• Lead front-end development of a safety-critical aviation mission operations platform for Advanced Air Mobility (AAM), where real-time vertiport data directly informs flight decisions.\n• Shipped interactive geospatial map modules covering vertiports, flight trajectories, and operational zones.\n• Built NOVA Admin Panel — an internal multi-tenant management platform enabling Unisphere to onboard, configure, and control organizations and users across the AAM ecosystem."
       },
       "1": {
         "role": "Full-Stack Software Engineer",
-        "desc": "• Architected EVIMO from the ground up — an AI-powered maintenance platform for EV charging infrastructure, delivering org management, asset tracking, and user admin across 50+ operational teams.\n• Implemented secure multi-tenant authentication and authorization with role-based access control.\n• Structured backend microservices following Clean Architecture, DDD, and CQRS — reducing code coupling by 40%.\n• Automated API documentation with Swagger/OpenAPI and established CI/CD pipelines via GitHub Actions."
+        "desc": "• Architected EVIMO from scratch — an AI-powered EV charging infrastructure maintenance platform serving 50+ operational teams with org management, asset tracking, and user administration.\n• Implemented secure multi-tenant auth with role-based access control across all user tiers.\n• Structured backend microservices using Clean Architecture, DDD, and CQRS — reducing code coupling by 40%.\n• Automated API documentation with Swagger/OpenAPI and set up end-to-end CI/CD via GitHub Actions."
       },
       "2": {
         "role": "Full-Stack Software Engineer",
-        "desc": "• Delivered 4 mission-critical features across Shipzzer's logistics SaaS platform (web & mobile), processing 500+ container operations daily and improving yard management efficiency.\n• Reduced manual support interventions by 40% by shipping self-service platform features, freeing engineering and operations capacity for higher-value work.\n• Refactored the admin management module handling employee presence monitoring and yard role assignment, used daily by 100+ users.\n• Identified and resolved security vulnerabilities across a 60k+ line codebase."
+        "desc": "• Delivered 4 mission-critical features on Shipzzer's logistics SaaS platform (web & mobile), supporting 500+ container operations per day and improving yard management throughput.\n• Cut manual support interventions by 40% by shipping self-service features that freed engineering and ops capacity.\n• Refactored the admin module for employee presence monitoring and yard role assignment, used daily by 100+ staff.\n• Identified and resolved security vulnerabilities across a 60k+ line production codebase."
       },
       "3": {
         "role": "Software Engineer Intern",
-        "desc": "• Built full-stack credit management application, enabling employees to submit, track, and manage credit workflows end-to-end and automating around 80% of previously manual tasks.\n• Designed self-service portal giving employees a single entry point, replacing a fragmented multi-step manual process.\n• Secured application with JWT-based authentication and role-based access control, ensuring only authorized employees could access and action credit requests."
+        "desc": "• Built a full-stack credit management application that automated ~80% of previously manual HR workflows — from submission to approval.\n• Designed a self-service employee portal replacing a fragmented multi-step manual process with a single unified interface.\n• Secured the platform with JWT authentication and role-based access control, enforcing strict permission boundaries per user type."
       }
     }
   },
   "education": {
     "title": "Education",
-    "desc": "My education has been a journey of self-discovery and growth. My educational details are as follows.",
+    "desc": "Engineering-trained and competition-tested. Here's where my technical foundation was built.",
     "items": {
       "0": {
         "degree": "Engineering Degree in Computer Science",
-        "desc": "Engineering Degree in Computer Science — comprehensive curriculum covering software engineering, distributed systems, algorithms, and system design with hands-on project experience."
+        "desc": "5-year engineering program covering software architecture, distributed systems, algorithms, databases, and system design — with hands-on project work each semester."
       },
       "1": {
         "degree": "Preparatory Cycle — Mathematics & Physics",
-        "desc": "Preparatory cycle in Mathematics & Physics. Ranked top 25% nationally — 464th out of 1,800 candidates in the competitive engineering school entrance exam."
+        "desc": "2-year intensive prep cycle in Mathematics & Physics. Ranked top 25% nationally — 464th out of 1,800 candidates in the competitive engineering school entrance exam."
       }
     }
   },
   "projects": {
     "title": "Projects",
-    "desc": "I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.",
+    "desc": "A selection of what I've built — from production SaaS platforms to AI tools and mobile apps.",
     "all": "All",
-    "webApp": "WEB APP'S",
-    "androidApp": "ANDROID APP'S",
-    "machineLearning": "MACHINE LEARNING",
+    "webApp": "Web App",
+    "androidApp": "Android App",
+    "machineLearning": "Machine Learning",
     "aiProjects": "AI Projects",
     "viewCode": "View Code",
     "viewLiveApp": "View Live App",
@@ -73,47 +80,47 @@
     "items": {
       "0": {
         "title": "E-Commerce Platform",
-        "description": "Full-stack e-commerce platform supporting 200+ products for the Tunisian retail market in Canada. Covers product catalog management, shopping cart, secure checkout, and user authentication. Owned the full SDLC — from requirements gathering and UI prototyping to deployment and CI/CD configuration."
+        "description": "Production-grade e-commerce platform supporting 200+ products for the Tunisian retail market in Canada. Built end-to-end: product catalog, shopping cart, secure checkout, OAuth 2.0 auth, and automated CI/CD deployment. Owned the full SDLC from requirements to delivery."
       },
       "1": {
-        "title": "HEALTHCARE",
-        "description": "Our Project Goal is to create an application that helps run a medical office smoothly. People should be able to book appointments online and manage patient information easily. The idea is to make it user-friendly and upgrade the way medical practices handle their tasks to enhance the overall workflow."
+        "title": "Medical Office Platform",
+        "description": "Full-stack clinic management system with online appointment booking, patient records, and doctor scheduling. Replaced fragmented manual admin workflows with a single end-to-end digital solution built on Angular and Node.js."
       },
       "2": {
-        "title": "Road Network Data Collection Application",
-        "description": "Our Road Network Data Collection Application addresses the growing challenge of managing traffic. Our solution involves gathering and monitoring data from various sources. We use algorithms to analyze this data, identifying traffic patterns, accidents, road closures, and weather information. The app features a user-friendly interface and REST/SOAP web services for data access and visualization."
+        "title": "Traffic Intelligence Platform",
+        "description": "Real-time road network monitoring system that ingests traffic data from multiple sources, detects accidents and congestion patterns, and exposes the processed results via REST and SOAP APIs for third-party integration and visualization."
       },
       "3": {
-        "title": "Enicarthage FEE",
-        "description": "Developed a full-stack web application for our university's annual forum that showcases our institution, its activities, and assists administration in efficiently managing event requirements."
+        "title": "University Forum Platform",
+        "description": "Full-stack event management web app for ENICarthage's annual engineering forum — handling speaker scheduling, activity showcasing, and admin-side logistics for the institution. Built with React, Node.js, and MongoDB."
       },
       "4": {
-        "title": "Classification system for arabic PDF document",
-        "description": "The main goal of the project is to develop a tool capable of recognizing and extracting text from PDF documents written in Arabic using OCR techniques. It can be employed for digitizing and archiving printed Arabic documents due to the automation of text extraction from PDFs."
+        "title": "Arabic PDF OCR & Classifier",
+        "description": "OCR-powered tool that extracts and classifies text from Arabic PDF documents using TensorFlow and Pytesseract. Applies LDA topic modeling to automatically categorize content — built to automate the digitization of printed Arabic-language archives."
       },
       "5": {
-        "title": "Music Player App",
-        "description": "This desktop application is an all-in-one application that lets you easily find the best music, organize and personalize your favourite musics. Made with Java in MVC Architecture."
+        "title": "Music Player Desktop App",
+        "description": "Feature-rich Java desktop music player with library management, playlist creation, and a custom UI. Architected with MVC pattern for clean separation of concerns, backed by a MySQL database for persistent state."
       },
       "6": {
-        "title": "Pixemantic's Website",
-        "description": "During my internship at Pixemantic as a first-year student at Enicarthage, I was tasked with working on the frontend of their official website. Here, I applied the knowledge and skills I acquired during my training to develop a well-constructed web application using Angular."
+        "title": "Pixemantic — Corporate Website",
+        "description": "Built the official frontend for Pixemantic's corporate website during an internship — delivering reusable Angular components, responsive layouts, and a production-ready web presence from design handoff to deployment."
       },
       "7": {
-        "title": "E-recrutement Web app",
-        "description": "The solution proposed by ADDINN during my internship aimed to automate its recruitment process by creating the 'e-recruitment' platform. This platform played a crucial role in the pre-selection of candidates, streamlining and optimizing the hiring workflow. The platform implemented JSON Web Tokens (JWT) for secure authentication."
+        "title": "E-Recruitment Platform",
+        "description": "Automated recruitment platform built at ADDINN — handling candidate pre-screening, application tracking, and end-to-end hiring workflow management. Secured with JWT authentication and RBAC, architected with Clean Architecture and CQRS, and tested with XUnit."
       },
       "8": {
-        "title": "Face Recognition",
-        "description": "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces via the webcam. The dataset used is FER 2013 composed of 7178 images."
+        "title": "Real-Time Face & Emotion Recognition",
+        "description": "Python application performing live facial detection and emotion classification via webcam using OpenCV and the face_recognition library. Trained on the FER 2013 dataset (7,178 images) with a MobileNet CNN via TensorFlow/Keras."
       },
       "9": {
         "title": "Grammar Checker",
-        "description": "A simple and lightweight web application that helps users check grammar in English, French, and German."
+        "description": "Lightweight multilingual grammar checker supporting English, French, and German. Designed for fast, distraction-free writing correction directly in the browser — no signup required."
       },
       "10": {
-        "title": "ChatBot",
-        "description": "Designed and built a full-stack multilingual chatbot platform that provides grammar checking in English, French, and German. Combines a React and Next.js frontend with a FastAPI backend, PostgreSQL database, and GROQ API/LLMChain integration for real-time AI-powered grammar analysis."
+        "title": "AI Grammar Chatbot",
+        "description": "Full-stack multilingual AI chatbot with real-time grammar analysis across English, French, and German. React/Next.js frontend, FastAPI backend, PostgreSQL, and GROQ API with LLMChain integration for low-latency AI responses."
       }
     }
   },
@@ -121,20 +128,20 @@
     "title": "Achievements",
     "items": {
       "0": {
-        "title": "Code Her Ways 1.0",
-        "description": "I am honored to have clinched the 3rd place in Code Her Ways 1.0, a Problem Solving competition for girls, demonstrating my proficiency and commitment to coding excellence."
+        "title": "Code Her Ways 1.0 — 3rd Place",
+        "description": "Ranked 3rd in Code Her Ways 1.0, a national competitive programming challenge for women in tech. Competed against university teams across Tunisia under time-constrained algorithmic problem solving."
       },
       "1": {
-        "title": "TCPC Tunisian Collegiate Programming Contest",
-        "description": "Considered globally as the oldest and most important computer programming competition. The idea behind this great challenge is to stimulate the reasoning of participants to find solutions optimized in terms of time and performance using the least resources."
+        "title": "TCPC — Tunisian Collegiate Programming Contest",
+        "description": "Competed in the TCPC, one of Tunisia's most rigorous collegiate programming contests — solving optimization problems under strict time and memory constraints."
       },
       "2": {
-        "title": "SheSolves 5.0",
-        "description": "I proudly secured the 10th place in the SheSolves coding competition, organized by INSAT ACM Student Chapter and IEEE WIE INSAT Student Affinity Group, showcasing my skills and dedication."
+        "title": "SheSolves 5.0 — Top 10",
+        "description": "Ranked 10th in SheSolves 5.0, organized by INSAT ACM Student Chapter and IEEE WIE — a national competitive coding contest for women in engineering."
       },
       "3": {
-        "title": "Freeways ISI 1.0",
-        "description": "I achieved the 9th position in this coding competition, underscoring my competence and commitment during the event."
+        "title": "Freeways ISI 1.0 — 9th Place",
+        "description": "Ranked 9th in Freeways ISI 1.0, a competitive algorithmic problem-solving event held at Institut Supérieur d'Informatique."
       }
     }
   },

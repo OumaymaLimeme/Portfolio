@@ -3,8 +3,6 @@ import { useState } from "react";
 import {
   Container,
   Wrapper,
-  Title,
-  Desc,
   CardContainer,
   ToggleButtonGroup,
   ToggleButton,
@@ -13,6 +11,7 @@ import {
 import ProjectCard from "../Cards/ProjectCards";
 import { projects } from "../../data/constants";
 import { useTranslation } from "react-i18next";
+import SectionLabel from "../SectionLabel";
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
@@ -20,8 +19,11 @@ const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="projects">
       <Wrapper>
-        <Title>{t("projects.title")}</Title>
-        <Desc>{t("projects.desc")}</Desc>
+        <SectionLabel
+          number="03"
+          title={t("projects.title")}
+          desc={t("projects.desc")}
+        />
         <ToggleButtonGroup>
           {toggle === "all" ? (
             <ToggleButton active value="all" onClick={() => setToggle("all")}>
@@ -100,20 +102,24 @@ const Projects = ({ openModal, setOpenModal }) => {
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectCard
+                key={project.id}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
+                index={index}
               />
             ))}
           {projects
             .filter((item) => item.category === toggle)
-            .map((project) => (
+            .map((project, index) => (
               <ProjectCard
+                key={project.id}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
+                index={index}
               />
             ))}
         </CardContainer>
