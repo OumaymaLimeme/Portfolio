@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Container, Wrapper, Title, CardContainer } from "./ProjectsStyle";
+import { Container, Wrapper, CardContainer } from "./ProjectsStyle";
 import AchievementCard from "../Cards/AchievementCard";
 import AchievementDetails from "../AchievementDetails";
 import { acheivements } from "../../data/constants";
 import { useTranslation } from "react-i18next";
+import SectionLabel from "../SectionLabel";
 
 const Acheivements = () => {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ const Acheivements = () => {
   return (
     <Container id="acheivements">
       <Wrapper>
-        <Title>{t("achievements.title")}</Title>
+        <SectionLabel number="05" title={t("achievements.title")} />
         <CardContainer>
           {acheivements.map((achievement) => (
             <AchievementCard

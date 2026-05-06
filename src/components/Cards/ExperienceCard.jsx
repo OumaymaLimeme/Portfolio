@@ -19,7 +19,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${({ theme }) => theme.text_primary + "bb"};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -39,23 +39,28 @@ const Span = styled.span`
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 12px 16px;
-    justify-content: space-between;
+    padding: 16px 20px;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all 0.3s ease-in-out;
+    background: ${({ theme }) => theme.card};
+    border: 1px solid rgba(0, 201, 255, 0.12);
+    border-left: 3px solid ${({ theme }) => theme.primary};
+    box-shadow: rgba(0, 201, 255, 0.08) 0px 4px 24px;
+    transition: all 0.25s ease-in-out;
+
     &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
+        transform: translateX(5px);
+        border-left-color: #00a8d8;
+        box-shadow: -4px 0 20px rgba(0, 201, 255, 0.18), 0 4px 24px rgba(0, 0, 0, 0.25);
     }
+
     @media only screen and (max-width: 768px){
-        padding: 10px;
+        padding: 12px 14px;
         gap: 8px;
-        width: 300px;
+        width: 100%;
     }
 
     &:hover ${Document}{
@@ -66,24 +71,25 @@ const Card = styled.div`
         overflow: visible;
         -webkit-line-clamp: unset;
     }
-
-    border: 0.1px solid #309ee8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `
 
 const Top = styled.div`
     width: 100%;
     display: flex;
-    gap: 12px
+    gap: 12px;
 `
 
 const Image = styled.img`
-    height: 50px;
-    background-color: #000;
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+    background-color: transparent;
     border-radius: 10px;
     margin-top: 4px;
+    flex-shrink: 0;
     @media only screen and (max-width: 768px){
-        height: 40px;
+        height: 70px;
+        width: 70px;
     }
 `
 
@@ -94,9 +100,10 @@ const Body = styled.div`
 `
 
 const Role = styled.div`
-    font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
+    font-size: 19px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.text_primary};
+    letter-spacing: 0.01em;
     @media only screen and (max-width: 768px){
         font-size: 14px;
     }
@@ -105,16 +112,25 @@ const Role = styled.div`
 const Company = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: ${({ theme }) => theme.primary};
+    opacity: 0.85;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
 
+const DateLocation = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 3px;
+`
+
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${({ theme }) => theme.text_secondary + "cc"};
+    font-family: 'Fira Code', monospace;
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
@@ -123,11 +139,10 @@ const Date = styled.div`
 const Location = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_secondary};
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-top: 2px;
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
@@ -137,7 +152,7 @@ const Skills = styled.div`
     width: 100%;
     display: flex;
     gap: 12px;
-    margin-top: -10px;
+    margin-top: -4px;
 `
 
 const ItemWrapper = styled.div`
@@ -147,13 +162,14 @@ const ItemWrapper = styled.div`
 `
 
 const Skill = styled.div`
-    font-size: 13px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    font-size: 12px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.primary};
     background: rgba(0, 201, 255, 0.08);
     border: 1px solid rgba(0, 201, 255, 0.2);
     border-radius: 20px;
     padding: 3px 10px;
+    letter-spacing: 0.02em;
     @media only screen and (max-width: 768px){
         font-size: 11px;
         padding: 2px 8px;
@@ -172,13 +188,15 @@ const ExperienceCard = ({ experience }) => {
                 <Body>
                     <Role>{role}</Role>
                     <Company>{experience.company}</Company>
-                    <Date>{experience.date}</Date>
-                    {experience.location && (
-                        <Location>
-                            <FaMapMarkerAlt size={10} />
-                            {experience.location}
-                        </Location>
-                    )}
+                    <DateLocation>
+                        <Date>{experience.date}</Date>
+                        {experience.location && (
+                            <Location>
+                                <FaMapMarkerAlt size={10} />
+                                {experience.location}
+                            </Location>
+                        )}
+                    </DateLocation>
                 </Body>
             </Top>
             <Description>

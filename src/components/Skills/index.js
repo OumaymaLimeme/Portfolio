@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { skills } from "../../data/constants";
 import { useTranslation } from "react-i18next";
+import SectionLabel from "../SectionLabel";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 const Container = styled.div`
   display: flex;
@@ -21,39 +23,9 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1100px;
   gap: 12px;
+  padding: 0 16px;
   @media (max-width: 960px) {
     flex-direction: column;
-  }
-`;
-
-export const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  &::after {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: linear-gradient(90deg, #00c9ff, #0077b6);
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-export const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
   }
 `;
 
@@ -79,8 +51,9 @@ const Skill = styled.div`
     padding: 10px 36px;
   }
   @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px 20px;
   }
 `;
 
@@ -103,14 +76,33 @@ const SkillList = styled.div`
 const SkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  color: ${({ theme }) => theme.text_primary + "cc"};
+  border: 1px solid ${({ theme }) => theme.text_primary + "55"};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  cursor: default;
+
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transform: ${({ $visible }) => ($visible ? "translateY(0)" : "translateY(18px)")};
+  transition: opacity 0.4s ease ${({ $delay }) => $delay || 0}s,
+    transform 0.4s ease ${({ $delay }) => $delay || 0}s,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: ${({ theme }) => theme.primary};
+    background: rgba(0, 201, 255, 0.08);
+    color: ${({ theme }) => theme.primary};
+    box-shadow: 0 0 14px rgba(0, 201, 255, 0.18);
+    transform: translateY(-2px);
+  }
+
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -128,18 +120,29 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   const { t } = useTranslation();
+  const [containerRef, visible] = useScrollReveal();
+
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>{t("skills.title")}</Title>
-        <Desc>{t("skills.desc")}</Desc>
-        <SkillsContainer>
+        <SectionLabel
+          number="01"
+          title={t("skills.title")}
+          desc={t("skills.desc")}
+        />
+        <SkillsContainer ref={containerRef}>
           {skills.map((skill, index) => (
-            <Skill>
-              <SkillTitle>{t(`skills.categories.${index}`, { defaultValue: skill.title })}</SkillTitle>
+            <Skill key={index}>
+              <SkillTitle>
+                {t(`skills.categories.${index}`, { defaultValue: skill.title })}
+              </SkillTitle>
               <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
+                {skill.skills.map((item, idx) => (
+                  <SkillItem
+                    key={idx}
+                    $visible={visible}
+                    $delay={idx * 0.05}
+                  >
                     <SkillImage src={item.image} />
                     {item.name}
                   </SkillItem>

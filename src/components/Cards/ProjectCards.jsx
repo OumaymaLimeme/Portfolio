@@ -1,6 +1,57 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'react-i18next'
+
+const ImageOverlay = styled.div`
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 201, 255, 0.12);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+`
+
+const ImageWrapper = styled.div`
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+`
+
+const Image = styled.img`
+    width: 100%;
+    height: 180px;
+    background-color: ${({ theme }) => theme.white};
+    border-radius: 10px;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+`
+
+const NumberBadge = styled.div`
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.primary};
+    opacity: 0.45;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    pointer-events: none;
+`
 
 const Button = styled.button`
     display: none;
@@ -15,6 +66,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
+
 const Card = styled.div`
     width: 340px;
     height: 490px;
@@ -27,23 +79,35 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 14px;
-    transition: all 0.5s ease-in-out;
+    position: relative;
+    transition: transform 0.15s ease, box-shadow 0.4s ease-in-out;
+    will-change: transform;
+
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
+        box-shadow: 0 0 40px 4px rgba(0,0,0,0.55), 0 0 0 1px rgba(0, 201, 255, 0.15);
     }
+
+    &:hover ${ImageOverlay} {
+        opacity: 1;
+    }
+
+    &:hover ${Image} {
+        transform: scale(1.04);
+    }
+
     &:hover ${Button} {
         display: block;
     }
-`
 
-const Image = styled.img`
-    width: 100%;
-    height: 180px;
-    background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    &:hover ${NumberBadge} {
+        opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+        padding: 18px 16px;
+    }
 `
 
 const Tags = styled.div`
@@ -59,7 +123,7 @@ const Tag = styled.span`
     font-size: 12px;
     font-weight: 400;
     color: hsla(213, 84%, 58%, 0.884);
-    background-color: ${({ theme }) => theme.primary + 15};
+    background-color: ${({ theme }) => theme.primary + "15"};
     padding: 2px 8px;
     border-radius: 10px;
 `
@@ -71,6 +135,7 @@ const Details = styled.div`
     gap: 0px;
     padding: 0px 2px;
 `
+
 const Title = styled.div`
     font-size: 20px;
     font-weight: 600;
@@ -88,7 +153,8 @@ const Date = styled.div`
     font-size: 12px;
     margin-left: 2px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${({ theme }) => theme.text_secondary + "80"};
+    font-family: 'Fira Code', monospace;
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
@@ -96,7 +162,7 @@ const Date = styled.div`
 
 const Description = styled.div`
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: ${({ theme }) => theme.text_secondary + "99"};
     overflow: hidden;
     margin-top: 8px;
     display: -webkit-box;
@@ -111,6 +177,7 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `
+
 const Avatar = styled.img`
     width: 38px;
     height: 38px;
@@ -121,17 +188,44 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({ project, setOpenModal }) => {
+const ProjectCards = ({ project, setOpenModal, index }) => {
     const { t } = useTranslation();
     const title = t(`projects.items.${project.id}.title`, { defaultValue: project.title });
     const description = t(`projects.items.${project.id}.description`, { defaultValue: project.description });
+    const num = String((index ?? 0) + 1).padStart(2, '0');
+    const cardRef = useRef(null);
+
+    const handleMouseMove = (e) => {
+        if (!cardRef.current) return;
+        const rect = cardRef.current.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const rotateY = ((x / rect.width) - 0.5) * 14;
+        const rotateX = (0.5 - (y / rect.height)) * 14;
+        cardRef.current.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
+    };
+
+    const handleMouseLeave = () => {
+        if (cardRef.current) {
+            cardRef.current.style.transform = `perspective(900px) rotateX(0deg) rotateY(0deg) translateY(0) scale(1)`;
+        }
+    };
 
     return (
-        <Card onClick={() => setOpenModal({ state: true, project: project })}>
-            <Image src={project.image} />
+        <Card
+            ref={cardRef}
+            onClick={() => setOpenModal({ state: true, project: project })}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+        >
+            <NumberBadge>{num} / {String(11).padStart(2, '0')}</NumberBadge>
+            <ImageWrapper>
+                <Image src={project.image} />
+                <ImageOverlay>view project →</ImageOverlay>
+            </ImageWrapper>
             <Tags>
-                {project.tags?.map((tag, index) => (
-                    <Tag key={index}>{tag}</Tag>
+                {project.tags?.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -140,8 +234,8 @@ const ProjectCards = ({ project, setOpenModal }) => {
                 <Description>{description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member, index) => (
-                    <Avatar key={index} src={member.img} />
+                {project.member?.map((member, i) => (
+                    <Avatar key={i} src={member.img} />
                 ))}
             </Members>
         </Card>

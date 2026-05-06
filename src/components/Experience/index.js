@@ -5,10 +5,12 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import ExperienceCard from "../Cards/ExperienceCard";
 import { experiences } from "../../data/constants";
 import { useTranslation } from "react-i18next";
+import SectionLabel from "../SectionLabel";
 
 const Container = styled.div`
   display: flex;
@@ -31,44 +33,13 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 80px 0;
+  padding: 80px 16px;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
 
-const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  &::after {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 3px;
-    background: linear-gradient(90deg, #00c9ff, #0077b6);
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-`;
 
 const TimelineSection = styled.div`
   width: 100%;
@@ -86,12 +57,32 @@ const Experience = () => {
   return (
     <Container id="experience">
       <Wrapper>
-        <Title>{t("experience.title")}</Title>
-        <Desc>{t("experience.desc")}</Desc>
+        <SectionLabel
+          number="02"
+          title={t("experience.title")}
+          desc={t("experience.desc")}
+        />
         <TimelineSection>
-          <Timeline>
+          <Timeline position="alternate">
             {experiences.map((experience, index) => (
-              <TimelineItem>
+              <TimelineItem key={index}>
+                <TimelineOppositeContent
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: index % 2 === 0 ? "flex-end" : "flex-start",
+                    py: "12px",
+                  }}
+                >
+                  <span style={{
+                    fontFamily: "'Fira Code', monospace",
+                    fontSize: "12px",
+                    color: "rgba(255,255,255,0.35)",
+                    letterSpacing: "0.04em",
+                  }}>
+                    {experience.date}
+                  </span>
+                </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="info" />
                   {index !== experiences.length - 1 && (
