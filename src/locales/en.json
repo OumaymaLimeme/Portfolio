@@ -15,7 +15,7 @@
     "title": "oumeima@portfolio: ~",
     "lines": [
       { "cmd": "whoami", "out": "Oumeima Limeme — Full-Stack Engineer" },
-      { "cmd": "cat passion.txt", "out": "I don't just write code. I ship products." },
+      { "cmd": "cat passion.txt", "out": "I don't write code. I ship products." },
       { "cmd": "./impact --stats", "out": "2+ years · 4 companies · 0 excuses" }
     ]
   },

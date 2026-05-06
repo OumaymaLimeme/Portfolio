@@ -11,13 +11,14 @@ import {
   MobileMenu,
   MobileLink,
   LangToggle,
+  ThemeToggle,
 } from "./NavbarStyledComponent";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaSun, FaMoon } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
 import { useTranslation } from "react-i18next";
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
   const { t, i18n } = useTranslation();
@@ -55,6 +56,9 @@ const Navbar = () => {
           <NavLink href="#contact">{t("nav.contact")}</NavLink>
         </NavItems>
         <ButtonContainer>
+          <ThemeToggle onClick={toggleDarkMode} title={darkMode ? "Switch to light mode" : "Switch to dark mode"}>
+            {darkMode ? <FaSun /> : <FaMoon />}
+          </ThemeToggle>
           <LangToggle onClick={toggleLang} style={{ marginRight: "12px" }}>
             {i18n.language === "en" ? "DE" : "EN"}
           </LangToggle>
@@ -89,6 +93,9 @@ const Navbar = () => {
               {t("nav.contact")}
             </MobileLink>
             <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+              <ThemeToggle onClick={toggleDarkMode} title={darkMode ? "Switch to light mode" : "Switch to dark mode"}>
+                {darkMode ? <FaSun /> : <FaMoon />}
+              </ThemeToggle>
               <LangToggle onClick={toggleLang}>
                 {i18n.language === "en" ? "DE" : "EN"}
               </LangToggle>

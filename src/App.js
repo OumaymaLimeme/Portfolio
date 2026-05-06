@@ -39,17 +39,27 @@ const GrainOverlay = styled.div`
   background-size: 256px 256px;
 `
 function App() {
-  // eslint-disable-next-line no-unused-vars
-  const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("darkMode");
+    return saved !== null ? saved === "true" : true;
+  });
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   console.log(openModal)
+
+  const toggleDarkMode = () => {
+    setDarkMode(prev => {
+      localStorage.setItem("darkMode", String(!prev));
+      return !prev;
+    });
+  };
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
         <CursorGlow />
         <GrainOverlay />
         <ScrollProgress />
-        <Navbar />
+        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Body>
           <HeroSection />
           <Wrapper>

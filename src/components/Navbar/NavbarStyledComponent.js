@@ -233,3 +233,23 @@ export const LangToggle = styled.button`
     color: white;
   }
 `;
+
+export const ThemeToggle = styled.button`
+  border: 1.8px solid hsla(213, 84%, 58%, 0.884);
+  background: transparent;
+  color: hsla(213, 84%, 58%, 0.884);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: hsla(213, 84%, 58%, 0.884);
+    color: white;
+  }
+`;
